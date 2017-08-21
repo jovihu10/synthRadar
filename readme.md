@@ -20,3 +20,4 @@ No será tan seguro como si estuvieras registrado
 5º) Si un producto encaja en lo que buscas, puedes comunicarte por mail con el vendedor.
 
 6) Si buscas un producto y no está, puedes poner un alert para cuando esté el moelo que buscas y encaje en el rango de precio, te envíe un alert
+# synthRadar
