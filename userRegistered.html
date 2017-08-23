@@ -3,14 +3,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Synth Radar</title>
-  
+    <link rel="stylesheet" href="css/userRegistered.css">
+    <title>User Registered</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="synthRadarLogo.png">
 </head>
 
 <body>
@@ -23,161 +23,181 @@
                 </div>
                 <div class="col-sm-4 py-4">
                     <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Email me</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <div class="navbar navbar-dark">
         <img class="key" src="img/key.png">
         <div class="container d-flex justify-content-between">
-            <a class="synthRadar" href="http://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand">Latest Products</a>
+            <a class="synthRadar " href="http://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand">Latest Products</a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--buscador -->
-            <div class="col-lg-6 col-md-4 col-sm-4">
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
-                    <span class="input-group-btn">
+            <div class="col-lg-6 col-md-4 col-sm-2 col-xs-2">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                        <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
+                            <i class="glyphicon-search"></i>
                         </button>
                     </span>
+                    </div>
                 </div>
             </div>
-        </div>
             <!-- -->
             <!-- El login/register empieza aquí -->
-           
-                <button class="loginRegisterbtn btn btn-primary" data-toggle="modal" data-target="#myModal">Sign In/Register</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-sm">
-                    <div class="copyRight modal-content">
-                        <br>
-                        <div class="bs-example bs-example-tabs">
-                            <ul id="myTab" class="nav nav-tabs">
-                                <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-                                <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
-                                <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
-                            </ul>
+            <div class="col-sm-3 col-md-3">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                            </span>Content</a>
+                        </h4>
                         </div>
-                        <div class="modal-body">
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane fade in" id="why">
-                                    <p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
-                                    <p></p>
-                                    <br> Please contact <a mailto:href="JoeSixPack@Sixpacksrus.com"></a>JoeSixPack@Sixpacksrus.com</a> for any other inquiries.</p>
-                                </div>
-                                <div class="tab-pane fade active in" id="signin">
-                                    <form class="form-horizontal">
-                                        <fieldset>
-                                            <!-- Sign In Form -->
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="userid">Alias:</label>
-                                                <div class="controls">
-                                                    <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Password input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="passwordinput">Password:</label>
-                                                <div class="controls">
-                                                    <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-                                                </div>
-                                            </div>
-                                            <!-- Multiple Checkboxes (inline) -->
-                                            <div class="control-group">
-                                                <label class="control-label" for="rememberme"></label>
-                                                <div class="controls">
-                                                    <label class="checkbox inline" for="rememberme-0">
-                                                        <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me"> Remember me
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <!-- Button -->
-                                            <div class="control-group">
-                                                <label class="control-label" for="signin"></label>
-                                                <div class="controls">
-                                                    <button id="signin" name="signin" class="btn btn-success">Sign In</button>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="signup">
-                                    <form class="form-horizontal">
-                                        <fieldset>
-                                            <!-- Sign Up Form -->
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="Email">Email:</label>
-                                                <div class="controls">
-                                                    <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="userid">Alias:</label>
-                                                <div class="controls">
-                                                    <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Password input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="password">Password:</label>
-                                                <div class="controls">
-                                                    <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-                                                    <em>1-8 Characters</em>
-                                                </div>
-                                            </div>
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
-                                                <div class="controls">
-                                                    <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Multiple Radios (inline) -->
-                                            <br>
-                                            <div class="control-group">
-                                                <label class="control-label" for="humancheck">Humanity Check:</label>
-                                                <div class="controls">
-                                                    <label class="radio inline" for="humancheck-0">
-                                                        <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
-                                                    <label class="radio inline" for="humancheck-1">
-                                                        <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
-                                                </div>
-                                            </div>
-                                            <!-- Button -->
-                                            <div class="control-group">
-                                                <label class="control-label" for="confirmsignup"></label>
-                                                <div class="controls">
-                                                    <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
+                                            <span class="badge">42</span>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <center>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </center>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                            </span>Modules</a>
+                        </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Tex</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                            </span>Account</a>
+                        </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                            Delete Account</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
+                            </span>Reports</a>
+                        </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- cierra el login/register -->
-         
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <div class="well">
+                    <h1>
+                    Accordion Menu With Icon</h1> Admin Dashboard Accordion Menu
+                </div>
+            </div>
+            <!-- Cierra el login/register -->
         </div>
     </div>
     </div>
@@ -185,12 +205,10 @@
         <div class="container">
             <img class="synthRadar" src="img/synthRadarLogo.png">
             <h1 class="jumbotron-heading">Synth Radar</h1>
-        
             <p class="lead">If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!</p>
-            
-                <hr>
-                <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-primary">DataRadar</a>
-                <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-secondary">More Products</a>
+            <hr>
+            <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-primary">UpdateRadar</a>
+            <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-secondary">More Products</a>
             </p>
         </div>
     </section>
@@ -203,7 +221,7 @@
 
             -->
                     <div class="container">
-                    <a href="#"><img class="synthImage" src="img/rolandSH101-350-280.jpg" target="_blank"></a>
+                        <a href="#"><img class="synthImage" src="img/rolandSH101-350-280.jpg" target="_blank"></a>
                     </div>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint est beatae autem consequuntur porro ad optio, sed cupiditate rerum delectus. Officia velit quo ab consectetur, suscipit reprehenderit, quam perferendis quaerat!</p>
                 </div>
@@ -248,7 +266,6 @@
         </div>
     </div>
     </div>
-    
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')
@@ -270,10 +287,7 @@
         <text x="0" y="18" style="font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif">356x280</text>
     </svg>
     <div class="footer container-fluid">
-    
-           <a class="copyRight" href="mailto:joelvila101@gmail.com">Copyright © Joël Vila</a>
-            
-       
+        <a class="copyRight" href="mailto:joelvila101@gmail.com">Copyright © Joël Vila</a>
     </div>
 </body>
 
