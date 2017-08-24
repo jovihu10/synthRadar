@@ -8,6 +8,24 @@
 
 /* Finaliza login/register */
 
+
+.mainForm{
+  border: 1px solid #bfbfbf;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 3%;
+}
+
+
+textarea{
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+
+.condition{
+  margin-top:5%;
+}
+
 /*buscador */
 #custom-search-input{
     padding: 3px;
@@ -15,6 +33,14 @@
     border-radius: 6px;
     background-color: #fff;
 }
+
+.description{
+  margin-top:7%;
+}
+
+
+
+
 
 #custom-search-input input{
     border: 0;
@@ -60,7 +86,6 @@
 
 .synthRadar {
     width: 25%;
- 
 
 }
 
@@ -137,13 +162,17 @@ background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,23
 
 .lead {
 	
-	color: white;
-	border-radius:5px;
-	background: grey;
-	padding:1%;
-	opacity:.7;
+color: white;
+  border-radius:5px;
+  background: grey;
+  padding:1%;
+  opacity:.7;
 
 }
+
+
+
+
 
 .loginRegister{
 	float: right;
@@ -164,8 +193,7 @@ background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,23
 
 }
 
-
-@media screen and (max-width: 630px){
+@media screen and (max-width: 800px){
   .key{
     display:none;
   }

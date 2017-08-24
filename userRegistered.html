@@ -3,14 +3,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    <link rel="stylesheet" href="css/userRegistered.css">
-    <title>User Registered</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Synth Radar</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="synthRadarLogo.png">
 </head>
 
 <body>
@@ -23,192 +23,78 @@
                 </div>
                 <div class="col-sm-4 py-4">
                     <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Follow on Twitter</a></li>
+                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Like on Facebook</a></li>
+                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Email me</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="navbar navbar-dark">
         <img class="key" src="img/key.png">
-        <div class="container d-flex justify-content-between">
-            <a class="synthRadar " href="http://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand">Latest Products</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--buscador -->
-            <div class="col-lg-6 col-md-4 col-sm-2 col-xs-2">
-                <div id="custom-search-input">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="form-control input-lg" placeholder="Buscar" />
-                        <span class="input-group-btn">
+        <!--buscador -->
+        <div class="col-lg-6 col-md-4 col-sm-4">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                    <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon-search"></i>
+                            <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </span>
-                    </div>
                 </div>
             </div>
-            <!-- -->
-            <!-- El login/register empieza aquí -->
-            <div class="col-sm-3 col-md-3">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-                            </span>Content</a>
-                        </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="http://www.jquery2dotnet.com">Articles</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-flash text-success"></span><a href="http://www.jquery2dotnet.com">News</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-file text-info"></span><a href="http://www.jquery2dotnet.com">Newsletters</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
-                                            <span class="badge">42</span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
-                            </span>Modules</a>
-                        </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Invoices</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Shipments</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Tex</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
-                            </span>Account</a>
-                        </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Change Password</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.jquery2dotnet.com">Import/Export</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
-                                            Delete Account</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-file">
-                            </span>Reports</a>
-                        </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-9 col-md-9">
-                <div class="well">
-                    <h1>
-                    Accordion Menu With Icon</h1> Admin Dashboard Accordion Menu
-                </div>
-            </div>
-            <!-- Cierra el login/register -->
         </div>
+        <!-- -->
+        <!--Empieza desplegable -->
+        <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="loginRegisterbtn btn btn-primary" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">@Jovihu10
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Profile</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">Drafts</a></li>
+                            <li><a href="#">Sent Items</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Trash</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="index.html" data-toggle="dropdown" class="dropdown-toggle">logout <b class="caret"></b></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!--Acaba desplegable -->
+    </div>
     </div>
     </div>
     <section class="center jumbotron text-center">
         <div class="container">
             <img class="synthRadar" src="img/synthRadarLogo.png">
             <h1 class="jumbotron-heading">Synth Radar</h1>
-            <p class="lead">If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!</p>
+            <p class="lead">These are the latest results in our Radar DataBase!</p>
             <hr>
             <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-primary">UpdateRadar</a>
-            <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-secondary">More Products</a>
+            <a href="uploadProduct" class="mainButtons btn btn-secondary">Upload Product</a>
             </p>
         </div>
     </section>
@@ -221,7 +107,7 @@
 
             -->
                     <div class="container">
-                        <a href="#"><img class="synthImage" src="img/rolandSH101-350-280.jpg" target="_blank"></a>
+                        <a href="items.html"><img class="synthImage" src="img/rolandSH101-350-280.jpg" target="_blank"></a>
                     </div>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint est beatae autem consequuntur porro ad optio, sed cupiditate rerum delectus. Officia velit quo ab consectetur, suscipit reprehenderit, quam perferendis quaerat!</p>
                 </div>
@@ -229,14 +115,14 @@
                     <!--<img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf43e%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf43e%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
 
             -->
-                    <a href="#"><img class="synthImage" src="img/p5-350-280.jpg" target="_blank"></a>
+                    <a href="items.html"><img class="synthImage" src="img/p5-350-280.jpg" target="_blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores fugiat minima voluptate facere ut numquam quaerat dolorem nam dolores modi dignissimos magnam, adipisci error repellat ad perferendis quisquam cum.</p>
                 </div>
                 <div class="rowSynth col-lg-4">
                     <!--
             <img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf442%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf442%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
             -->
-                    <a href="#"><img class="synthImage" src="img/grpA4-350-280.jpg" target="blank"></a>
+                    <a href="items.html"><img class="synthImage" src="img/grpA4-350-280.jpg" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.</p>
                 </div>
                 <div class="rowSynth col-lg-4">
@@ -244,14 +130,14 @@
             <img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf443%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf443%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
 
             -->
-                    <a href=""><img class="synthImage" src="img/virusTI-Snow-350-280.jpg" target="blank"></a>
+                    <a href="items.html"><img class="synthImage" src="img/virusTI-Snow-350-280.jpg" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam dolorum nostrum temporibus assumenda, illo nihil libero in autem eaque laboriosam. Est, laudantium provident fugiat. Delectus cupiditate reiciendis, doloribus id.</p>
                 </div>
                 <div class="rowSynth col-lg-4">
                     <!--<img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf444%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf444%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
 
             -->
-                    <a href="#"><img class="synthImage" src="img/tr909-350-280.jpg" target="blank"></a>
+                    <a href="items.html"><img class="synthImage" src="img/tr909-350-280.jpg" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam illum ratione ab mollitia officiis, esse, qui. Aut recusandae, voluptatum assumenda quibusdam et, debitis quaerat, mollitia laudantium rerum est dolorem non?</p>
                 </div>
                 <div class="rowSynth col-lg-4">
@@ -259,7 +145,7 @@
             <img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf444%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf444%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
 
             -->
-                    <a href="#"><img class="synthImage" src="img/korg_ms20-350-280.jpg" target="blank"></a>
+                    <a href="items.html"><img class="synthImage" src="img/korg_ms20-350-280.jpg" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quia consequatur in, corporis commodi ea at tempora modi, sit, sapiente tenetur expedita perferendis eaque, autem nesciunt cupiditate ipsam distinctio. Voluptatibus!</p>
                 </div>
             </div>

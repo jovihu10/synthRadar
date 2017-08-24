@@ -1,9 +1,43 @@
+
+
+
+
+
+
 body {
   font-family: 'open sans';
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+
+  
+  }
+
+  html{
+    background: grey;
+  }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+
+   }
+
+   body{
+    background: grey !important;
+   }
+
+.preview{
+
+}
+
+#check{
+  background: #ccffcc;
+}
+
+img{
+  border-radius: 4px;
+}
+
+
+
 
 .preview {
   display: -webkit-box;
@@ -24,6 +58,11 @@ img {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+
+          .secondaryPictures img{
+            display: inline-block;
+            width:50%;
+          }
 
 .preview-thumbnail.nav-tabs {
   border: none;

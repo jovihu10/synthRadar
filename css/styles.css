@@ -170,7 +170,7 @@ background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,23
 
 }
 
-@media screen and (max-width: 8px){
+@media screen and (max-width: 800px){
   .key{
     display:none;
   }
