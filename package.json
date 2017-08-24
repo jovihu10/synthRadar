@@ -1,0 +1,20 @@
+{
+  "name": "synthRadar",
+  "version": "1.0.0",
+  "description": "1ºUsuario aterriza en la web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovihu10/synthRadar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jovihu10/synthRadar/issues"
+  },
+  "homepage": "https://github.com/jovihu10/synthRadar#readme"
+}

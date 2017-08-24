@@ -35,7 +35,7 @@
     <div class="navbar navbar-dark">
         <img class="key" src="img/key.png">
         <!--buscador -->
-        <div class="col-lg-6 col-md-4 col-sm-4">
+        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4i">
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
                     <input type="text" class="form-control input-lg" placeholder="Buscar" />
@@ -87,6 +87,8 @@
     </div>
     </div>
     </div>
+
+<!--
     <section class="center jumbotron text-center">
         <div class="container">
             <h1 class="jumbotron-heading">Synth Radar</h1>
@@ -98,10 +100,11 @@
             </p>
         </div>
     </section>
-    <!-- formu. Sacado del form de ignasi 
 
-    https://github.com/ignblanch/skylab_bootcamp2017/tree/master/Week6/login-miniproject -->
+    -->
+  
     <div class="container"></div>
+    <hr>
     <div class="row">
         <div class="col-lg-2 col-sm-2 py-2">
         </div>
@@ -112,7 +115,7 @@
                     <div class="form-group">
                         <label for="buyOrSell">What do you whant to do?:</label>
                        <fieldset>
-                        <input type="radio" name="buyOrSellIt" value="sell" checked>Sell it
+                        <input type="radio" name="buyOrSellIt" value="sell" checked>Sell it<br>
                         <input type="radio" name="buyOrSellIt" value="buy" checked>Buy it
                         </fieldset>
                             
@@ -129,14 +132,7 @@
                             <input type="radio" name="kindOfProduct" value="manufacturerRefurbished"> Others
                             
                         </fieldset>
-                        <label for="kindOfProduct">Kind of product:</label>
-                        
-                            <select class="typeOfDevice" name="typeOfDevice" form="form-group">
-                                <option value="synthesizer">Synthesizer</option>
-                                <option value="drumBox">drumBox/Sampler</option>
-                                <option value="effects">Effects</option>
-                                <option value="others">Others</option>
-                            </select>
+                       
                         </fieldset>
                         <label class="brand" for="brand">Brand:</label>
                         <input type="text" name="brand" placeholder="Brand of this model" class="form-control" />
@@ -160,30 +156,25 @@
                                 
                             </select>
                         </fieldset>
-                        <label class="condition" for="condition">Condition</label>
-                        <fieldset>
-                            <input type="radio" name="condition" value="new" checked> New
-                            <br>
-                            <input type="radio" name="condition" value="newOther">New other (see details)
-                            <br>
-                            <input type="radio" name="condition" value="other"> Other
-                            <br>
-                            <input type="radio" name="condition" value="manufacturerRefurbished"> Manufacturer refurbished
-                            <br>
-                            <input type="radio" name="condition" value="sellerRefurbished"> Seller refurbished
-                            <br>
-                            <input type="radio" name="condition" value="used"> Used
-                            <br>
-                            <input type="radio" name="condition" value="notWorking"> For parts or not working
-                        </fieldset>
+                        
                         <label class="description" for="description">Description</label>
                         <fieldset>
                             <textarea name="description" rows="10" cols="50" class="required" placeholder="Write a little explanation about state of the product, how it works, etcetera"></textarea>
                         </fieldset>
                         <label for="price ">Price:</label>
-                        <input type="text " name="price " placeholder="Price" class="form-control" />
+                        <input type="text " name="price" placeholder="€" class="form-control col-lg-2" />
                     </div>
-                    <button type="submit " class="btn btn-info ">Submit</button>
+
+
+                    <!-- boton subir foto -->
+                    <input type="file" name="file">
+
+
+                    <!--final de boton para subir foto -->
+
+
+
+                    <button type="submit " class="btn btn-info col-lg-2">Submit</button>
             </div>
         </div>
         </form>
@@ -194,20 +185,23 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Album example for Bootstrap_files/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous "></script>
     <script>
     window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js "><\/script>')
     </script>
-    <script src="./Album example for Bootstrap_files/popper.min.js "></script>
-    <script src="./Album example for Bootstrap_files/holder.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/holder.min.js "></script>
     <script>
     $(function() {
         Holder.addTheme("thumb ", { background: "#55595c ", foreground: "#eceeef ", text: "Thumbnail " });
     });
     </script>
-    <script src="./Album example for Bootstrap_files/bootstrap.min.js "></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./Album example for Bootstrap_files/ie10-viewport-bug-workaround.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/uploadProduct.js "></script>
+
+   
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/uploadProduct.js"></script>
     <svg xmlns="http://www.w3.org/2000/svg " width="356 " height="280 " viewBox="0 0 356 280 " preserveAspectRatio="none " style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%; ">
         <defs>
             <style type="text/css "></style>
