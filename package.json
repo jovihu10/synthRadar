@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/jovihu10/synthRadar/issues"
   },
-  "homepage": "https://github.com/jovihu10/synthRadar#readme"
+  "homepage": "https://github.com/jovihu10/synthRadar#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "path": "^0.12.7"
+  }
 }
