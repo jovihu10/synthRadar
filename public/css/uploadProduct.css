@@ -1,28 +1,49 @@
 /*Empieza login/register */
-
-#myNavbar {
-    margin-right: 10px;
+.navbar {
+    margin: 0;
+    padding:2%;
+   
+}
+.upload{
+    margin-top: 9%;
 }
 
-.panel-body {
-    padding: 0px;
+.mainForm{
+    margin-top: 5%;
+    height: 1000px;
 }
 
-.panel-body table tr td {
-    padding-left: 15px
+.submit{
+    margin-top:5%;
+
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+.mainForm{
+    margin-top: 5%;
+    height: 1000px;
 }
 
-.panel-body .table {
-    margin-bottom: 0px;
+.submit{
+    margin-top:5%;
+
 }
 
 
 
 
-/* Finaliza login/register */
 
 
-/* Header */
 
 .nav li a {
 
@@ -62,7 +83,7 @@
     border: 1px solid #bfbfbf;
     background: #f2f2f2;
     border-radius: 5px;
-    padding: 3%;
+    padding: 5%;
 }
 
 .kindOfItem {
@@ -260,7 +281,7 @@ background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,23
 }
 
 .copyRight {
-    margin-top: -6%;
+
     color: white;
 }
 
@@ -277,3 +298,4 @@ background: -webkit-gradient(left top, right top, color-stop(0%, rgba(179,220,23
         display: none;
     }
 }
+

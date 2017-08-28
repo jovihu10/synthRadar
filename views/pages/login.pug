@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='http://getbootstrap.com/favicon.ico')
+    title Login
+    link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='https://bootswatch.com/united/bootstrap.min.css')
+    link(href='css./album.css', rel='stylesheet')
+    link(rel='stylesheet', href='css/login.css')
+  body
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') Home
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='login.html')
+                | Login 
+                span.sr-only (current)
+            li
+              a(href='register.html') Register
+          form.navbar-form.navbar-right
+            .form-group
+              input.form-control(type='text', placeholder='Search')
+            button.btn.btn-default(type='submit') Submit
+    .container
+    .row
+      .col-lg-2.col-sm-2.py-2
+      .formu.col-lg-6.col-sm-6.py-4
+        form.signup-form(action='signup', method='POST')
+          h1 Login
+          .form-group
+            label(for='username') Username:
+            label(for='password') Password: 
+            input.form-control(type='password', name='password', placeholder='Chose your password')
+            label(for='password') Password: 
+            input.form-control(type='password', name='password', placeholder='Repeat the password')
+          button.btn.btn-info(type='submit') Create User
+    script(src='./Album example for Bootstrap_files/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\\/script>')
+    script(src='./Album example for Bootstrap_files/popper.min.js')
+    script(src='./Album example for Bootstrap_files/holder.min.js')
+    script.
+      $(function() {
+      Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      });
+    script(src='./Album example for Bootstrap_files/bootstrap.min.js')
+    script(src='./Album example for Bootstrap_files/ie10-viewport-bug-workaround.js')
+    svg(xmlns='http://www.w3.org/2000/svg', width='356', height='280', viewbox='0 0 356 280', preserveaspectratio='none', style='display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;')
+      defs
+        style(type='text/css').
+      text(x='0', y='18', style='font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif') 356x280
+    .footer.container-fluid
+      ul
+        li
+          a(href='mailto:joelvila101@gmail.com') Copyright © Joël Vila
+        li

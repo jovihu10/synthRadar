@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico"> 
+    <title>Register</title>
+   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/united/bootstrap.min.css">
+    <link href="css./album.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="login.html">Login <span class="sr-only">(current)</span></a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>    
+    </div>
+</nav>
+    <div class="container"></div>
+    <div class="row">
+        <div class="col-lg-2 col-sm-2 py-2">
+        </div>
+        <div class="formu col-lg-6 col-sm-6 py-4">
+            <form action="signup" method="POST" class="signup-form">
+                <h1>Create new user</h1>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="Write your name" class="form-control" />
+                    <label for="nameSurname">Name and Surname:</label>
+                    <input type="text" name="nameSurname" placeholder="Write your complete name" class="form-control" />
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" placeholder="Email Adress" class="form-control" />
+                    <label for="location">Location:</label>
+                    <input type="text" name="location" placeholder="Where do you live?" class="form-control" />
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" name="birthday" placeholder="Write your name" class="form-control" />
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" class="form-control" placeholder="Chose your password" />
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" class="form-control" placeholder="Repeat the password" />
+                </div>
+                <button type="submit" class="btn btn-info">Create User</button>
+        </div>
+    </div>
+    </form>
+    <script src="./Album example for Bootstrap_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="./Album example for Bootstrap_files/popper.min.js"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js"></script>
+    <script>
+    $(function() {
+        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+    });
+    </script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Album example for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" width="356" height="280" viewBox="0 0 356 280" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <text x="0" y="18" style="font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif">356x280</text>
+    </svg>
+    <div class="footer container-fluid">
+        <ul>
+            <li><a href="mailto:joelvila101@gmail.com">Copyright © Joël Vila</a></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,5 +1,7 @@
 .navbar {
-    height: 100px;
+    margin: 0;
+    padding:2%;
+   
 }
 
 .key {
@@ -8,11 +10,9 @@
     float: left;
 }
 
-.center {}
 
-.card-text {
-    font-size: 90%;
-}
+
+
 
 
 
@@ -24,12 +24,12 @@ hr {
 
 /* Header */
 
-.nav li a {
+// .nav li a {
 
 
-    padding: 5%;
-    padding-right: 2%;
-}
+//     padding: 5%;
+//     padding-right: 2%;
+// }
 
 .header {
 
@@ -198,6 +198,7 @@ p {
 
     .lead {
         font-size: 180%!important;
+
     }
 
     .header ul li a {

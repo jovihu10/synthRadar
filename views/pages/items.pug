@@ -1,0 +1,130 @@
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Item
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet')
+    link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='https://bootswatch.com/united/bootstrap.min.css')
+    link(rel='stylesheet', href='css/items.css')
+  body
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') Home
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='login.html')
+                | Login 
+                span.sr-only (current)
+            li
+              a(href='register.html') Register
+          form.navbar-form.navbar-right
+            .form-group
+              input.form-control(type='text', placeholder='Search')
+            button.btn.btn-default(type='submit') Submit
+    .mainContent.container-fluid
+      .card
+        .container-fliud
+          .wrapper.row
+            ins.adsbygoogle(style='display:block', data-ad-client='ca-pub-9155049400353686', data-ad-slot='5554792257', data-ad-format='auto')
+            script.
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            .preview.col-md-6.col-sm-4.col-md-4
+              .preview-pic.tab-content
+                #pic-1.tab-pane.active
+                  img(src='img/sh101-blue-2.jpg', target='_blank')
+                .container
+                  .row
+                    .col-lg-2.col-md-2.col-sm-4.col-xs-4
+                      #pic-2.tab-pane
+                        a(href='img/sh-101-blue-3.jpg')
+                          img(src='img/sh-101-blue-3.jpg', target='_blank')
+                    .col-lg-2.col-md-2.col-sm-4
+                      #pic-3.tab-pane
+                        a(href='img/sh101-blue-2.jpg')
+                          img(src='img/sh101-blue-2.jpg', target='_blank')
+                    .col-lg-2.col-md-2.col-sm-4
+                      #pic-4.tab-pane
+                        a(href='img/sh101-blue-2.jpg')
+                          img(src='img/sh101-blue-2.jpg', target='_blank')
+                    .col-lg-2.col-md-2.col-sm-4
+                      #pic-5.tab-pane
+                        a(href='img/sh101-blue-2.jpg')
+                          img(src='img/sh101-blue-2.jpg', target='_blank')
+                    .col-lg-2.col-md-2.col-sm-4
+                      #pic-5.tab-pane
+                        a(href='img/sh101-blue-2.jpg')
+                          img(src='img/sh101-blue-2.jpg', target='_blank')
+            .details.col-md-6
+              h3.product-title  Roland SH-101 
+              span.user @Jovihu10
+              p.product-description
+                | Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.
+              h4.price
+                | current price: 
+                span 299 €
+              p.vote
+                strong 91%
+                |  of users like this product! 
+                strong (87 votes)
+              h5.condition
+                | condition:
+                span.condition(data-toggle='tooltip', title='small') Seller refurbished 
+              h5.aproved
+                | aproved: 
+                i.fa.fa-check-square(aria-hidden='true')
+              .action
+                .container
+                  .row
+                    .col-lg-2.col-md-2
+                      button.btn.btn-primary.btn-md(data-toggle='modal', data-target='#ModalMessage')
+                        span.glyphicon.glyphicon-envelope
+                        |  Contact
+                #ModalMessage.contact.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                  .modal-dialog
+                    form#FormMessage.form-horizontal
+                      .modal-content
+                        .modal-header.btn-primary
+                          button.close(type='button', data-dismiss='modal')
+                            span(aria-hidden='true') ×
+                            span.sr-only Close
+                          h4#myModalLabel.text-center Message
+                        .modal-body
+                          br
+                          .control-group
+                            label(for='destinataire') Sélectionner un service
+                            select#FormMessageDestinatiare.form-control(name='destinataire')
+                              option(value='0', selected='selected') Support
+                          br
+                          .control-group
+                            label(for='destinataire') Sujet
+                            input.form-control(name='sujet', type='text')
+                          br
+                          .control-group
+                            label(for='destinataire') Message
+                            textarea#FormMessageMessage.form-control(name='message', rows='5')
+                          br
+                        .modal-footer
+                          .text-center
+                            button.btn.btn-primary.btn-lg(type='submit')
+                              span.glyphicon.glyphicon-send
+                              |  Envoyer
+                            button.btn.btn-default.btn-xs(type='button', data-dismiss='modal') Fermer
+                button.alerts.add-to-cart.btn.btn-danger(type='button') Receive alerts
+                button.like.btn.alert-danger(type='button')
+                  span.fa.fa-heart
+    .footer.container-fluid
+      .row
+        .col-lg-1
+        .col-lg-6
+          a.copyRight(href='mailto:joelvila101@gmail.com') Copyright © Joël Vila
+    script(src='js/jquery-3.2.1.slim.min.js')
+    script(src='js/bootstrap.min.js')

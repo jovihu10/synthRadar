@@ -1,5 +1,7 @@
 .navbar {
-    height: 100px;
+    margin: 0;
+    padding:2%;
+   
 }
 
 .key {
@@ -8,31 +10,34 @@
     float: left;
 }
 
-.center {}
+.formu{
+    border: 1px solid #cccccc;
+    margin-top:5%;
+    border-radius:5px;
+    background: #e6e6e6;
+    padding:3%;
 
-.card-text {
-    font-size: 90%;
+    
 }
 
-form{
 
-}
+
 
 
 
 hr {
-   
+    width: 22.5%;
 }
 
 
 /* Header */
 
-.nav li a {
+// .nav li a {
 
 
-    padding: 5%;
-    padding-right: 2%;
-}
+//     padding: 5%;
+//     padding-right: 2%;
+// }
 
 .header {
 
@@ -78,14 +83,6 @@ hr {
     transition: 0.5s;
 }
 
-.formu{
-    border: 1px solid #cccccc;
-    margin-top:5%;
-    border-radius:5px;
-    background: #e6e6e6;
-
-    
-}
 
 /* Synths */
 
@@ -120,7 +117,11 @@ hr {
     padding: 1%;
 }
 
-
+.synthImage h3 {
+    color: white;
+    font-family: arial;
+    margin-top: 5%;
+}
 
 /* Cierre synths */
 
@@ -130,7 +131,7 @@ hr {
 
 .footer {
     width: 100%;
-    margin-top:6%;
+    margin-top:4%;
 
     background: black;
 }
@@ -175,7 +176,7 @@ p {
 
 .copyRight {
     opacity: .9;
-   
+    margin-top: 10%;
     color: white;
     text-align: center;
     padding-left: 5%;
@@ -206,6 +207,7 @@ p {
 
     .lead {
         font-size: 180%!important;
+
     }
 
     .header ul li a {

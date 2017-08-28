@@ -1,0 +1,21 @@
+{
+  "name": "synthRadar",
+  "description": "1ºUsuario aterriza en la web",
+  "main": "app.js",
+  "authors": [
+    "JuanMa Garrido <JuanMa.Garrido@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jovihu10/synthRadar",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7."
+  }
+}
