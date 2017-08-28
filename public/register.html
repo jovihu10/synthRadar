@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
     <title>Album example for Bootstrap</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,55 +16,47 @@
     <link href="css./album.css" rel="stylesheet">
 </head>
 
-<body style="">
-    <div class="bg-dark collapse" id="navbarHeader" style="">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-                </div>
-                <div class="col-sm-4 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Email me</a></li>
-                    </ul>
-                </div>
+<body>
+<!--El nuevo header -->
+    <nav class="header navbar navbar-expand-md navbar-expand-sm navbar-expand-s navbar-expand-xs">
+        <a class="headerLink navbar-link" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="headerLink nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="headerLink nav-link" href="#">Register</a>
+                </li>
+                <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Enter</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-        </div>
-    </div>
-    <div class="navbar navbar-dark">
-        <img class="key" src="img/key.png">
-        <div class="container d-flex justify-content-between">
-            <a class="synthRadar" href="http://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand">Latest Products</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--buscador -->
-            <!-- -->
-            <!-- El nav  -->
-            <ul class="nav nav-pills">
-                <li class="login"><a href="#">Login</a></li>
-                <li class="register"><a href="#">Register</a></li>
+          </li>
+          -->
             </ul>
-            <!-- cierra el nav -->
+            <!--el buscador que funciona -->
+            <form class="search form-inline col-lg-12">
+                <div class="invisible col-lg-1 col-md-hidden">
+                </div>
+                <input class="form-control col-lg-6 col-md-4 col-sm-4 col-xs-4" type="text" placeholder="Search" aria-label="Search">
+                <!--<i class="fa fa-search btn btn-secondary" type="submit"></i> -->
+                <button class="buttonSearch btn btn-secondary" type="submit">Search</button>
+                <div class=" invisible col-lg-2 col-md-2 col-sm-0">
+                </div>
+            </form>
+            <!-- Cierre del buscador que funciona -->
         </div>
-    </div>
-    </div>
-    </div>
-    <section class="center jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Synth Radar</h1>
-            <p class="lead text-muted">If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!</p>
-            <p>
-                <hr>
-                <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-primary">Main call to action</a>
-                <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-secondary">Secondary action</a>
-            </p>
-        </div>
-    </section>
+    </nav>
+    <!-- Fin del nuevo header -->
+
     <!-- formu. Sacado del form de ignasi 
 
     https://github.com/ignblanch/skylab_bootcamp2017/tree/master/Week6/login-miniproject -->
@@ -75,9 +67,11 @@
     </div>
     
                 <div class="col-lg-6 col-sm-6 py-4">
-                <h1>Create new user</h1>
+                
     <form action="signup" method="POST" class="signup-form">
-        <div class="form-group">
+    <fieldset>
+    <h1>Create new user</h1>
+        <div class="formu form-group">
         
 
         <label for="username">Username:</label>

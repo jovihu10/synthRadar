@@ -3,252 +3,108 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <title>Synth Radar</title>
-  
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
-    <div class="bg-dark collapse" id="navbarHeader" style="">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-                </div>
-                <div class="col-sm-4 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Email me</a></li>
-                    </ul>
-                </div>
+    <!--El nuevo header -->
+    <nav class="header navbar navbar-expand-md navbar-expand-sm navbar-expand-s navbar-expand-xs">
+        <a class="headerLink navbar-link" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="headerLink nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="headerLink nav-link" href="#">Register</a>
+                </li>
+                <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Enter</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-        </div>
-    </div>  
-    <div class="navbar navbar-dark">
-        <img class="key" src="img/key.png">
-        <div class="container d-flex justify-content-between">
-            <a class="synthRadar" href="http://getbootstrap.com/docs/4.0/examples/album/#" class="navbar-brand">Latest Products</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--buscador -->
-            <div class="col-lg-6 col-md-4 col-sm-4">
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <span class="glyphicons glyphicons-search"></span>
-                        </button>
-                    </span>
+          </li>
+          -->
+            </ul>
+            <!--el buscador que funciona -->
+            <form class="search form-inline col-lg-12">
+                <div class="invisible col-lg-1 col-md-hidden">
                 </div>
-            </div>
-        </div>
-            <!-- -->
-            <!-- El login/register empieza aquí -->
-           
-                <button class="loginRegisterbtn btn btn-primary" data-toggle="modal" data-target="#myModal">Sign In/Register</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-sm">
-                    <div class="copyRight modal-content">
-                        <br>
-                        <div class="bs-example bs-example-tabs">
-                            <ul id="myTab" class="nav nav-tabs">
-                                <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-                                <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
-                                <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
-                            </ul>
-                        </div>
-                        <div class="modal-body">
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane fade in" id="why">
-                                    <p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
-                                    <p></p>
-                                    <br> Please contact <a mailto:href="JoeSixPack@Sixpacksrus.com"></a>JoeSixPack@Sixpacksrus.com</a> for any other inquiries.</p>
-                                </div>
-                                <div class="tab-pane fade active in" id="signin">
-                                    <form class="form-horizontal">
-                                        <fieldset>
-                                            <!-- Sign In Form -->
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="userid">Alias:</label>
-                                                <div class="controls">
-                                                    <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Password input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="passwordinput">Password:</label>
-                                                <div class="controls">
-                                                    <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-                                                </div>
-                                            </div>
-                                            <!-- Multiple Checkboxes (inline) -->
-                                            <div class="control-group">
-                                                <label class="control-label" for="rememberme"></label>
-                                                <div class="controls">
-                                                    <label class="checkbox inline" for="rememberme-0">
-                                                        <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me"> Remember me
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <!-- Button -->
-                                            <div class="control-group">
-                                                <label class="control-label" for="signin"></label>
-                                                <div class="controls">
-                                                     <a id="signin" name="signin" class="btn btn-success" href="userRegistered.html">Sign In</a>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="signup">
-                                    <form class="form-horizontal">
-                                        <fieldset>
-                                            <!-- Sign Up Form -->
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="Email">Email:</label>
-                                                <div class="controls">
-                                                    <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="userid">Alias:</label>
-                                                <div class="controls">
-                                                    <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Password input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="password">Password:</label>
-                                                <div class="controls">
-                                                    <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-                                                    <em>1-8 Characters</em>
-                                                </div>
-                                            </div>
-                                            <!-- Text input-->
-                                            <div class="control-group">
-                                                <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
-                                                <div class="controls">
-                                                    <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
-                                                </div>
-                                            </div>
-                                            <!-- Multiple Radios (inline) -->
-                                            <br>
-                                            <div class="control-group">
-                                                <label class="control-label" for="humancheck">Humanity Check:</label>
-                                                <div class="controls">
-                                                    <label class="radio inline" for="humancheck-0">
-                                                        <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
-                                                    <label class="radio inline" for="humancheck-1">
-                                                        <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
-                                                </div>
-                                            </div>
-                                            <!-- Button -->
-                                            <div class="control-group">
-                                                <label class="control-label" for="confirmsignup"></label>
-                                                <div class="controls">
-                                                    <a id="confirmsignup" name="confirmsignup" href="userRegistered.html" class="btn btn-success">Sign Up</a>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <center>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </center>
-                        </div>
-                    </div>
+                <input class="form-control col-lg-6 col-md-4 col-sm-4 col-xs-4" type="text" placeholder="Search" aria-label="Search">
+                <!--<i class="fa fa-search btn btn-secondary" type="submit"></i> -->
+                <button class="buttonSearch btn btn-secondary" type="submit">Search</button>
+                <div class=" invisible col-lg-2 col-md-2 col-sm-0">
                 </div>
-                <!-- cierra el login/register -->
-         
+            </form>
+            <!-- Cierre del buscador que funciona -->
         </div>
-    </div>
-    </div>
+    </nav>
+    <!-- Fin del nuevo header -->
+  
     <section class="center jumbotron text-center">
         <div class="container">
-            <img class="synthRadar" src="img/synthRadarLogo.png">
             <h1 class="jumbotron-heading">Synth Radar</h1>
-        
-            <p class="lead">If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!</p>
-            
-                <hr>
-                <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-primary">DataRadar</a>
-                <a href="uploadProduct.html" class="mainButtons btn btn-secondary">Upload Product</a>
+            <hr>
+            <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="mainButtons btn btn-primary">DataRadar</a>
+            <a href="uploadProduct.html" class="mainButtons btn btn-secondary">Upload Product</a>
             </p>
         </div>
     </section>
     <div class="album text-muted">
         <div class="container">
+            <p class="lead">If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!</p>
             <div class="row">
                 <div class="rowSynth col-lg-4">
-                    <!--
-            <img data-src="holder.js/100px280/thumb" alt="100%x280" style="height: 280px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf43c%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf43c%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-
-            -->
-                    <div class="container">
-                    <a href="items.html"><img class="synthImage" src="img/rolandSH101-350-280.jpg" target="_blank"></a>
+                    <div class="sprocket-mosaic-image-container">
+                        <a href="items.html">
+                            <div class="synthImage" target="_blank" id="sh101">
+                                <!-- <h3 id="titleSynth">Roland SH-101</h3> -->
+                            </div>
+                        </a>
                     </div>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint est beatae autem consequuntur porro ad optio, sed cupiditate rerum delectus. Officia velit quo ab consectetur, suscipit reprehenderit, quam perferendis quaerat!</p>
-                </div>
-                <div class="rowSynth col-lg-4">
-                    <!--<img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf43e%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf43e%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-
-            -->
-                    <a href="items.html"><img class="synthImage" src="img/p5-350-280.jpg" target="_blank"></a>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores fugiat minima voluptate facere ut numquam quaerat dolorem nam dolores modi dignissimos magnam, adipisci error repellat ad perferendis quisquam cum.</p>
-                </div>
-                <div class="rowSynth col-lg-4">
-                    <!--
-            <img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf442%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf442%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-            -->
-                    <a href="items.html"><img class="synthImage" src="img/grpA4-350-280.jpg" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.</p>
                 </div>
                 <div class="rowSynth col-lg-4">
-                    <!--
-            <img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf443%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf443%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-
-            -->
-                    <a href="items.html"><img class="synthImage" src="img/virusTI-Snow-350-280.jpg" target="blank"></a>
+                    <a href="items.html">
+                        <div class="synthImage" id="prophet5" target="_blank"></div>
+                    </a>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores fugiat minima voluptate facere ut numquam quaerat dolorem nam dolores modi dignissimos magnam, adipisci error repellat ad perferendis quisquam cum.</p>
+                </div>
+                <div class="rowSynth col-lg-4">
+                    <a href="items.html">
+                        <div class="synthImage" id="grpA4" target="blank"></div>
+                    </a>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.</p>
+                </div>
+                <div class="rowSynth col-lg-4">
+                    <a href="items.html"><img class="synthImage" id="virusTi" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam dolorum nostrum temporibus assumenda, illo nihil libero in autem eaque laboriosam. Est, laudantium provident fugiat. Delectus cupiditate reiciendis, doloribus id.</p>
                 </div>
                 <div class="rowSynth col-lg-4">
-                    <!--<img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf444%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf444%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-
-            -->
-                    <a href="items.html"><img class="synthImage" src="img/tr909-350-280.jpg" target="blank"></a>
+                    <a href="items.html"><img class="synthImage" id="tr909" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam illum ratione ab mollitia officiis, esse, qui. Aut recusandae, voluptatum assumenda quibusdam et, debitis quaerat, mollitia laudantium rerum est dolorem non?</p>
                 </div>
                 <div class="rowSynth col-lg-4">
-                    <!--
-            <img data-src="holder.js/100px280/thumb" alt="100%x280" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22356%22%20height%3D%22280%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20356%20280%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15e03faf444%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A18pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15e03faf444%22%3E%3Crect%20width%3D%22356%22%20height%3D%22280%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22131.2890625%22%20y%3D%22147.95%22%3E356x280%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-
-            -->
-                    <a href="items.html"><img class="synthImage" src="img/korg_ms20-350-280.jpg" target="blank"></a>
+                    <a href="items.html"><img class="synthImage" id="ms20" target="blank"></a>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quia consequatur in, corporis commodi ea at tempora modi, sit, sapiente tenetur expedita perferendis eaque, autem nesciunt cupiditate ipsam distinctio. Voluptatibus!</p>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')
@@ -260,7 +116,6 @@
         Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
     });
     </script>
-    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <svg xmlns="http://www.w3.org/2000/svg" width="356" height="280" viewBox="0 0 356 280" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
@@ -270,11 +125,16 @@
         <text x="0" y="18" style="font-weight:bold;font-size:18pt;font-family:Arial, Helvetica, Open Sans, sans-serif">356x280</text>
     </svg>
     <div class="footer container-fluid">
-    
-           <a class="copyRight" href="mailto:joelvila101@gmail.com">Copyright © Joël Vila</a>
-            
-       
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-6">
+                <a class="copyRight" href="mailto:joelvila101@gmail.com">Copyright © Joël Vila</a>
+            </div>
+        </div>
     </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
