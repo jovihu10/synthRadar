@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<!--El nuevo header -->
+    <!--El nuevo header -->
     <nav class="header navbar navbar-expand-md navbar-expand-sm navbar-expand-s navbar-expand-xs">
         <a class="headerLink navbar-link" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,10 +26,10 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="headerLink nav-link" href="#">Login</a>
+                    <a class="headerLink nav-link" href="login.html">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="headerLink nav-link" href="#">Register</a>
+                    <a class="headerLink nav-link" href="register.html">Register</a>
                 </li>
                 <!--
           <li class="nav-item dropdown">
@@ -56,62 +56,34 @@
         </div>
     </nav>
     <!-- Fin del nuevo header -->
-
-    <!-- formu. Sacado del form de ignasi 
-
-    https://github.com/ignblanch/skylab_bootcamp2017/tree/master/Week6/login-miniproject -->
     <div class="container"></div>
-    
     <div class="row">
-    <div class="col-lg-2 col-sm-2 py-2">
+        <div class="col-lg-2 col-sm-2 py-2">
+        </div>
+        <div class="formu col-lg-6 col-sm-6 py-4">
+            <form action="signup" method="POST" class="signup-form">
+                <h1>Create new user</h1>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="Write your name" class="form-control" />
+                    <label for="nameSurname">Name and Surname:</label>
+                    <input type="text" name="nameSurname" placeholder="Write your complete name" class="form-control" />
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" placeholder="Email Adress" class="form-control" />
+                    <label for="location">Location:</label>
+                    <input type="text" name="location" placeholder="Where do you live?" class="form-control" />
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" name="birthday" placeholder="Write your name" class="form-control" />
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" class="form-control" placeholder="Chose your password" />
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" class="form-control" placeholder="Repeat the password" />
+                </div>
+                <button type="submit" class="btn btn-info">Create User</button>
+        </div>
     </div>
-    
-                <div class="col-lg-6 col-sm-6 py-4">
-                
-    <form action="signup" method="POST" class="signup-form">
-    <fieldset>
-    <h1>Create new user</h1>
-        <div class="formu form-group">
-        
-
-        <label for="username">Username:</label>
-            <input type="text" name="username" placeholder="Write your name" class="form-control" />
-
-
-            <label for="nameSurname">Name and Surname:</label>
-            <input type="text" name="nameSurname" placeholder="Write your complete name" class="form-control" />
-
-            <label for="email">Email address:</label>
-            <input type="email" name="email" placeholder="Email Adress" class="form-control" />
-
-
-            <label for="location">Location:</label>
-            <input type="text" name="location" placeholder="Where do you live?" class="form-control" />
-
-
-
-
-            
-
-
-            <label for="birthday">Birthday:</label>
-            <input type="date" name="birthday" placeholder="Write your name" class="form-control" />
-
-
-
-            <label for="password">Password: </label>
-            <input type="password" name="password" class="form-control" placeholder="Chose your password" />
-
-            <label for="password">Password: </label>
-            <input type="password" name="password" class="form-control" placeholder="Repeat the password" />
-        </div>
-        <button type="submit" class="btn btn-info">Create User</button>
-        </div>
-        </div>
     </form>
     <!--  -->
-    <footer class="text-muted">
-    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

@@ -14,94 +14,46 @@
 </head>
 
 <body>
-    <div class="bg-dark collapse" id="navbarHeader" style="">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+    <!--El nuevo header -->
+    <nav class="header navbar navbar-expand-md navbar-expand-sm navbar-expand-s navbar-expand-xs">
+        <a class="headerLink navbar-link" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="headerLink nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="headerLink nav-link" href="register.html">Register</a>
+                </li>
+                <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Enter</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          -->
+            </ul>
+            <!--el buscador que funciona -->
+            <form class="search form-inline col-lg-12">
+                <div class="invisible col-lg-1 col-md-hidden">
                 </div>
-                <div class="col-sm-4 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Follow on Twitter</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="text-white">Email me</a></li>
-                    </ul>
+                <input class="form-control col-lg-6 col-md-4 col-sm-4 col-xs-4" type="text" placeholder="Search" aria-label="Search">
+                <!--<i class="fa fa-search btn btn-secondary" type="submit"></i> -->
+                <button class="buttonSearch btn btn-secondary" type="submit">Search</button>
+                <div class=" invisible col-lg-2 col-md-2 col-sm-0">
                 </div>
-            </div>
+            </form>
+            <!-- Cierre del buscador que funciona -->
         </div>
-    </div>
-    <div class="navbar navbar-dark">
-        <img class="key" src="img/key.png">
-        <!--buscador -->
-        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4i">
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <!-- -->
-        <!--Empieza desplegable -->
-        <nav id="myNavbar" class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="loginRegisterbtn btn btn-primary" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">@Jovihu10
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Brand</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Profile</a></li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">Drafts</a></li>
-                            <li><a href="#">Sent Items</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Trash</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="index.html" data-toggle="dropdown" class="dropdown-toggle">logout <b class="caret"></b></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </nav>
-        <!--Acaba desplegable -->
-    </div>
-    </div>
-    </div>
-
-<!--
-    <section class="center jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Synth Radar</h1>
-            <p class="lead">Upload easily products and share with other peple around the world</p>
-            <p>
-                <hr>
-                <a href="http://getbootstrap.com/docs/4.0/examples/album/#" class="btn btn-primary">UpdateRadar</a>
-                <a href="uploadProduct.html" class="btn btn-secondary">Upload Product</a>
-            </p>
-        </div>
-    </section>
-
-    -->
+    </nav>
+    <!-- Fin del nuevo header -->
+    
   
     <div class="container"></div>
     <hr>
@@ -180,8 +132,7 @@
         </form>
     </div>
     <!--  -->
-    <footer class="text-muted ">
-    </footer>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
