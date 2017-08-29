@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/jovihu10/synthRadar#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.9",
     "path": "^0.12.7",
     "pug": "^2.0.0-rc.3"
   },
