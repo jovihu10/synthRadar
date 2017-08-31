@@ -50,16 +50,16 @@ html(lang='en')
           | If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!
         .row
           .rowSynth.col-lg-4
-            .thumbnail
-              img#sh101.synthImage(target='_blank')
-              #sh101.synthImage(target='_blank' style='background-image: url("+ synths.image +")')
-              .caption
-                //h3.h3 #{ synth.brand }
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.
-                p
-                  a.btn.btn-primary(href='item', role='button') +Info
-                  a.btn.btn-default(href='#', role='button') Contact
+            each synth in synths
+              .thumbnail
+                img#sh101.synthImage(target='_blank')
+                #sh101.synthImage(target='_blank' style='background-image: url("'+ synth.image +'")')
+                .caption
+                  h3.h3 #{ synth.brand }
+                  p= synth.description
+                  p
+                    a.btn.btn-primary(href='item', role='button') +Info
+                    a.btn.btn-default(href='#', role='button') Contact
          
     script(src='js/jquery-3.2.1.slim.min.js')
     script.

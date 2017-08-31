@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='http://getbootstrap.com/favicon.ico')
+    title Synth Radar
+    include includes/styles
+  body
+    include includes/navBar
+    block content
+      section.center.jumbotron.text-center
+        .container
+          h1.jumbotron-heading Synth Radar
+          hr
+          a.dataRadar.btn.btn-lg(href='http://getbootstrap.com/docs/4.0/examples/album/#') DataRadar
+          a.uploadProduct.btn.btn-lg(href='upload-product') Upload Product
+          p
+      .album.text-muted
+        .container
+          p.lead
+            | If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!
+          .row
+            .rowSynth.col-lg-4
+              .thumbnail
+                img#sh101.synthImage(target='_blank')
+                #sh101.synthImage(target='_blank' style='background-image: url("+ synths.image +")')
+                .caption
+                  //h3.h3 #{ synth.brand }
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.
+                  p
+                    a.btn.btn-primary(href='item', role='button') +Info
+                    a.btn.btn-default(href='#', role='button') Contact
+    include includes/footer
+    include includes/scripts
+    include includes/svg    
+    
