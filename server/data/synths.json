@@ -1,0 +1,28 @@
+[{  
+    "title": "Roland SH-101",
+    "buyOrSellIt": "sell",
+    "kindOfProduct": "Synthesizer",
+    "brand": "Roland",
+    "model": "SH-101",
+    "description": "Synth in perfect conditions",
+    "location": "Barcelona",
+    "condition": "new",
+    "image": "roland-cr78-1-350-280.jpg",
+    "price": 350,
+    "required": "true"
+  },
+
+  {  
+    "title": "Prophet 5",
+    "buyOrSellIt": "sell",
+    "kindOfProduct": "Synthesizer",
+    "brand": "Sequential Circuits",
+    "model": "Prophet 5",
+    "description": "Synth in perfect conditions",
+    "location": "London",
+    "condition": "new",
+    "image": "/img/rolandSH101-350-280.jpg",
+    "price": 350,
+    "required": "true"
+  }
+]
