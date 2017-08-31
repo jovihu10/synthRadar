@@ -55,11 +55,14 @@ html(lang='en')
                 img#sh101.synthImage(target='_blank')
                 #sh101.synthImage(target='_blank' style='background-image: url("'+ synth.image +'")')
                 .caption
-                  h3.h3 #{ synth.brand }
+                  h3.h3 #{ synth.title }
                   p= synth.description
                   p
                     a.btn.btn-primary(href='item', role='button') +Info
-                    a.btn.btn-default(href='#', role='button') Contact
+                    a.btn.btn-default(href='#', role='button') Contact 
+              
+
+
          
     script(src='js/jquery-3.2.1.slim.min.js')
     script.

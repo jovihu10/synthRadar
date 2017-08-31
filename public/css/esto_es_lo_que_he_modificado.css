@@ -1,0 +1,52 @@
+.navbar a{
+    color: black !important;
+    font-size:120%;
+}
+
+
+hr {
+    width: 25%;
+}
+
+.dataRadar{
+    background: #007bff;
+    margin-right:0.5%;
+    color: #fff;
+}
+
+.uploadProduct{
+    margin-left:0.5%;
+    background: #727b84;
+    color: #fff;
+
+}
+
+.dataRadar:hover {
+    background: #b37400;
+    transition: .2s;
+    color: white;
+}
+
+.uploadProduct:hover {
+    background: #595959;
+    transition: .2s;
+
+    color: white;
+}
+
+.caption{
+    background: #f2f2f2;
+}
+
+h3{
+    background: white;
+    color: black;
+    padding:5%;
+}
+
+
+
+
+
+cambiar cdn bootstrap
+link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")

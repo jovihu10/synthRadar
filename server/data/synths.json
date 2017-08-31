@@ -7,8 +7,22 @@
     "description": "Synth in perfect conditions",
     "location": "Barcelona",
     "condition": "new",
-    "image": "roland-cr78-1-350-280.jpg",
+    "image": "img/rolandSH101-350-280.jpg",
     "price": 350,
+    "required": "true"
+  },
+
+  {  
+    "title": "Virus Ti",
+    "buyOrSellIt": "sell",
+    "kindOfProduct": "Synthesizer",
+    "brand": "Access",
+    "model": "Virus Ti Polar",
+    "description": "To repair. I don't send it",
+    "location": "Barcelona",
+    "condition": "to repair",
+    "image": "img/virusTI-Snow-350-280.jpg",
+    "price": 150,
     "required": "true"
   },
 
@@ -18,10 +32,52 @@
     "kindOfProduct": "Synthesizer",
     "brand": "Sequential Circuits",
     "model": "Prophet 5",
-    "description": "Synth in perfect conditions",
+    "description": "Synth in perfect conditions. bla bla bla",
     "location": "London",
+    "condition": "as new",
+    "image": "img/p5-350-280.jpg",
+    "price": 350,
+    "required": "true"
+  },
+
+  {  
+    "title": "Roland TR-909",
+    "buyOrSellIt": "sell",
+    "kindOfProduct": "Drumbox",
+    "brand": "Roland",
+    "model": "tR-909",
+    "description": "Synth in perfect conditions",
+    "location": "Barcelona",
     "condition": "new",
-    "image": "/img/rolandSH101-350-280.jpg",
+    "image": "img/tr909-350-280.jpg",
+    "price": 950,
+    "required": "true"
+  },
+
+  {  
+    "title": "Grp A4",
+    "buyOrSellIt": "sell",
+    "kindOfProduct": "Synthesizer",
+    "brand": "Grp",
+    "model": "A4",
+    "description": "Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions",
+    "location": "Italy",
+    "condition": "new",
+    "image": "img/grpA4-350-280.jpg",
+    "price": 350,
+    "required": "true"
+  },
+
+  {  
+    "title": "Korg MS-20",
+    "buyOrSellIt": "sell",
+    "kindOfProduct": "Synthesizer",
+    "brand": "Korg",
+    "model": "MS-20",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.",
+    "location": "Paris",
+    "condition": "new",
+    "image": "/img/p5-350-280.jpg",
     "price": 350,
     "required": "true"
   }

@@ -1,7 +1,6 @@
 .navbar {
     margin: 0;
-    padding:2%;
-   
+    padding: 2%;
 }
 
 .key {
@@ -10,37 +9,31 @@
     float: left;
 }
 
-.formu{
+
+
+.formu {
     border: 1px solid #cccccc;
-    margin-top:5%;
-    border-radius:5px;
+    margin-top: 5%;
+    border-radius: 5px;
     background: #e6e6e6;
-    padding:3%;
-
-    
-}
-
-
-.btn-info{
-    background:#007bff
+    padding: 4%;
 }
 
 
 
 
-
+hr {
+    width: 22.5%;
+}
 
 
 
 /* Header */
 
 // .nav li a {
-
-
 //     padding: 5%;
 //     padding-right: 2%;
 // }
-
 .header {
 
     color: black;
@@ -55,11 +48,6 @@
     color: black;
 }
 
-.navbar a {
-    color: black !important;
-    font-size: 120%;
-}
-
 .navlink {
     color: black;
 }
@@ -70,6 +58,7 @@
 }
 
 
+
 /* Cierre Header */
 
 .synthImage {
@@ -78,18 +67,17 @@
 
 .synthImage {
     width: 100%;
-    height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 
-
 .synthImage:hover {
     opacity: 0.5;
     transition: 0.5s;
 }
+
 
 
 /* Synths */
@@ -131,6 +119,7 @@
     margin-top: 5%;
 }
 
+
 /* Cierre synths */
 
 .jumbotron {
@@ -139,7 +128,7 @@
 
 .footer {
     width: 100%;
-    margin-top:4%;
+    margin-top: 17%;
 
     background: black;
 }
@@ -215,7 +204,6 @@ p {
 
     .lead {
         font-size: 180%!important;
-
     }
 
     .header ul li a {

@@ -21,15 +21,13 @@
 }
 
 
-.btn-info{
-    background:#007bff
+
+
+
+
+hr {
+    width: 22.5%;
 }
-
-
-
-
-
-
 
 
 /* Header */
@@ -55,11 +53,6 @@
     color: black;
 }
 
-.navbar a {
-    color: black !important;
-    font-size: 120%;
-}
-
 .navlink {
     color: black;
 }
@@ -83,7 +76,6 @@
     background-size: cover;
     background-position: center center;
 }
-
 
 
 .synthImage:hover {

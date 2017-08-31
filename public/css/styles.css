@@ -1,7 +1,19 @@
 .navbar {
     margin: 0;
-    padding:2%;
-   
+    padding: 2%;
+}
+
+.container{
+
+}
+
+.album{
+
+}
+
+.navbar a {
+    color: black !important;
+    font-size: 120%;
 }
 
 .key {
@@ -9,6 +21,53 @@
 
     float: left;
 }
+
+.form-control {
+    width: 150%;
+}
+
+.dataRadar {
+    background: #007bff;
+    margin-right: 0.5%;
+    color: #fff;
+}
+
+.uploadProduct {
+    margin-left: 0.5%;
+    background: #727b84;
+    color: #fff;
+}
+
+.btn-primary {
+
+    background: #007bff;
+}
+
+.dataRadar:hover {
+    background: #b37400;
+    transition: .2s;
+    color: white;
+}
+
+.uploadProduct:hover {
+    background: #595959;
+    transition: .2s;
+
+    color: white;
+}
+
+.caption{
+    background: #f2f2f2;
+}
+
+h3{
+    background: white;
+    color: black;
+    padding:5%;
+}
+
+
+
 
 
 
@@ -18,23 +77,21 @@
 
 
 hr {
-    width: 22.5%;
+    width: 25%;
 }
+
 
 
 /* Header */
 
 // .nav li a {
-
-
 //     padding: 5%;
 //     padding-right: 2%;
 // }
-
 .header {
 
     color: black;
-    margin-left: 7%;
+   
     font-size: 120%;
 }
 
@@ -54,6 +111,9 @@ hr {
     margin-left: 5%;
 }
 
+.section{
+    height: 800px;
+}
 
 /* Cierre Header */
 
@@ -76,13 +136,15 @@ hr {
 }
 
 
+
 /* Synths */
 
 #sh101 {
-    background-image: url("../img/rolandSH101-350-280.jpg");
+    /*background-image: url("../img/rolandSH101-350-280.jpg");*/
     padding-left: !important0;
 }
 
+/*
 #prophet5 {
     background-image: url("../img/p5-350-280.jpg");
 }
@@ -104,7 +166,7 @@ hr {
 
     background-image: url("../img/korg_ms20-350-280.jpg");
 }
-
+*/
 .rowSynth {
     padding: 1%;
 }
@@ -114,6 +176,7 @@ hr {
     font-family: arial;
     margin-top: 5%;
 }
+
 
 /* Cierre synths */
 
@@ -198,7 +261,6 @@ p {
 
     .lead {
         font-size: 180%!important;
-
     }
 
     .header ul li a {
