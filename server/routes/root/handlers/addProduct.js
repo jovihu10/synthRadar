@@ -1,12 +1,13 @@
-function addProduct (req,res) {
-	console.log(req.body)
+const Synth = require('../../../models/Synth')
 
-	// TODO recoger datos del nuevo producto del req body
-	// TODO crear nuevo producto (a partir de modelo Product) y guardarlo en db
-	// TODO canalizar el resultado para que se muestren los items
-	//hacer pagina de usuario myProducts que muestre los productos filtrados de ese usuario en concreto
-  //res.render('synth')
-  res.send('ok')
+function addProduct(req, res) {
+    const _synth = req.body
+    const synth = new Synth(_synth)
+
+    synth.save()
+        .then(() => {
+            res.redirect('/') // TODO put the correct route to redirect once saved
+        })
 }
 
 module.exports = addProduct

@@ -41,6 +41,8 @@ html(lang='en')
         .mainForm
           form#form-group.signup-form(action='/upload-product', method='POST')
             .form-group
+              label.title(for='title') Title:
+              input.form-control(type='text', name='title', placeholder='Title of this model')
               label(for='buyOrSell') What would you like to do?:
               fieldset
                 input(type='radio', name='buyOrSellIt', required='', value='sell', checked='true')
@@ -66,7 +68,7 @@ html(lang='en')
               label(for='model') Model:
               input.form-control(type='text', name='model', placeholder='Write the model')
               label(for='location ') Location:
-              input.form-control(type='text ', name='location ', placeholder='Where do you live? ')
+              input.form-control(type='text ', name='location', placeholder='Where do you live? ')
               fieldset
                 label(for='kindOfProduct') Condition:
                 select.condition(name='condition', form='form-group')

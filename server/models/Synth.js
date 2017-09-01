@@ -3,7 +3,7 @@ const collection = 'synths'
 //si falla la var synthSchema ponerla así:
 //const Schema = mongoose.Schema
 //var SynthSchema = new Schema({
-var SynthsSchema = new mongoose.Schema({
+var SynthSchema = new mongoose.Schema({
 
     title: {
         type: String,
@@ -51,7 +51,7 @@ var SynthsSchema = new mongoose.Schema({
         required: true
     },
     description: {
-        city: String,
+        type: String,
         required: true
     },
 
