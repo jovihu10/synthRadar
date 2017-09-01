@@ -1,0 +1,260 @@
+.navbar {
+    margin: 0;
+    padding: 2%;
+}
+
+
+.navbar a {
+    color: black !important;
+    font-size: 120%;
+}
+
+.key {
+    width: 10%;
+
+    float: left;
+}
+
+.form-control {
+    width: 150%;
+}
+
+.dataRadar {
+    background: #007bff;
+    margin-right: 0.5%;
+    color: #fff;
+}
+
+.uploadProduct {
+    margin-left: 0.5%;
+    background: #727b84;
+    color: #fff;
+}
+
+.btn-primary {
+
+    background: #007bff;
+}
+
+.dataRadar:hover {
+    background: #b37400;
+    transition: .2s;
+    color: white;
+}
+
+.uploadProduct:hover {
+    background: #595959;
+    transition: .2s;
+
+    color: white;
+}
+
+.caption{
+    background: #f2f2f2;
+}
+
+h3{
+    background: white;
+    color: black;
+    padding:5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+hr {
+    width: 25%;
+}
+
+
+
+/* Header */
+
+// .nav li a {
+//     padding: 5%;
+//     padding-right: 2%;
+// }
+.header {
+
+    color: black;
+   
+    font-size: 120%;
+}
+
+.headerLink {
+
+    margin-left: 7%;
+    font-size: 120%;
+    color: black;
+}
+
+.navlink {
+    color: black;
+}
+
+
+.search {
+    margin-left: 5%;
+}
+
+
+
+/* Cierre Header */
+
+.synthImage {
+    border-radius: 3px;
+}
+
+.synthImage {
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.synthImage:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+
+/* Synths */
+
+#sh101 {
+    
+    padding-left: !important0;
+    background-image: url("../img/p5-350-280.jpg");
+}
+
+#prophet5 {
+    background-image: url("../img/p5-350-280.jpg");
+}
+
+#grpA4 {
+    background-image: url("../img/grpA4-350-280.jpg");
+}
+
+#virusTi {
+
+    background-image: url("../img/virusTI-Snow-350-280.jpg");
+}
+
+#tr909 {
+    background-image: url("../img/tr909-350-280.jpg");
+}
+
+#ms20 {
+
+    background-image: url("../img/korg_ms20-350-280.jpg");
+}
+
+.rowSynth {
+    padding: 1%;
+}
+
+.synthImage h3 {
+    color: white;
+    font-family: arial;
+    margin-top: 5%;
+}
+
+
+/* Cierre synths */
+
+.jumbotron {
+    background-image: url("../img/sub37_3.jpg");
+}
+
+.footer {
+    width: 100%;
+
+    background: black;
+}
+
+.footer ul li {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.footer ul li a:hover {
+    color: grey;
+    transition: .3s;
+}
+
+
+.lead {
+    font-size: 250%!important;
+    /*color: white; */
+    border-radius: 5px;
+    /*background: #0069d9;*/
+    padding: 3%;
+    color: black;
+    text-align: center;
+    /*opacity:.8; */
+}
+
+p {
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
+.copyRight {
+    opacity: .9;
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.mainButtons {
+    opacity: .9;
+}
+
+@media screen and (max-width: 800px) {
+    .key {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .headerLink {
+
+        font-size: 80%;
+    }
+
+    .header a {}
+
+    .invisible {
+        display: none;
+    }
+
+    .lead {
+        font-size: 180%!important;
+    }
+
+    .header ul li a {
+        display: block;
+    }
+}

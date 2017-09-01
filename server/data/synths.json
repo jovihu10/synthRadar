@@ -1,6 +1,7 @@
 [{  
     "title": "Roland SH-101",
     "buyOrSellIt": "sell",
+    "buyOrSellIt": "buy",
     "kindOfProduct": "Synthesizer",
     "brand": "Roland",
     "model": "SH-101",
@@ -15,6 +16,7 @@
   {  
     "title": "Virus Ti",
     "buyOrSellIt": "sell",
+    "buyOrSellIt": "buy",
     "kindOfProduct": "Synthesizer",
     "brand": "Access",
     "model": "Virus Ti Polar",
@@ -29,6 +31,7 @@
   {  
     "title": "Prophet 5",
     "buyOrSellIt": "sell",
+    "buyOrSellIt": "buy",
     "kindOfProduct": "Synthesizer",
     "brand": "Sequential Circuits",
     "model": "Prophet 5",
