@@ -1,5 +1,5 @@
 {
-  "name": "synthRadar",
+  "name": "synthradar",
   "description": "1ºUsuario aterriza en la web",
   "main": "app.js",
   "authors": [
@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7."
+    "font-awesome": "^4.7.x"
   }
 }
