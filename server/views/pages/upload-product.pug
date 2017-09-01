@@ -39,7 +39,7 @@ html(lang='en')
       .col-lg-6.col-sm-6.py-4
         h1.upload Upload a product
         .mainForm
-          form.signup-form(action='/product', method='POST')
+          form#form-group.signup-form(action='/upload-product', method='POST')
             .form-group
               label(for='buyOrSell') What would you like to do?:
               fieldset
@@ -82,7 +82,7 @@ html(lang='en')
                 textarea.required(name='description', rows='10', cols='50', placeholder='Write a little explanation about state of the product, how it works, etcetera')
               label(for='price ') Price:
               input.form-control.col-lg-2(type='text ', name='price', placeholder='€')
-            input(type='file', name='file')
+            input(type='file', name='image')
             button.submit.btn.btn-info.col-lg-2(type='submit ') Submit
     .footer.container-fluid
       ul

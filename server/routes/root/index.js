@@ -6,6 +6,8 @@ const showLogin = require('./handlers/showLogin')
 const addProduct = require('./handlers/addProduct')
 
 
+// navigation routes
+
 router.get('/', showHome)
 router.get('/login', showLogin)
 
@@ -33,12 +35,9 @@ router.get('/upload-product', (req, res) => {
     res.render('pages/upload-product')
 })
 
+// form routes
 
-router.post('/', (req, res) => {
-    res.render('pages')
-})
-
-router.post('/product', (req, res) => {
+router.post('/upload-product', (req, res) => {
     console.log(req.body)
 
     // TODO recoger datos del nuevo producto del req body
