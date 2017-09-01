@@ -61,4 +61,4 @@ var SynthsSchema = new mongoose.Schema({
     }
 }, { collection })
 
-module.exports = mongoose.model('Synth', SynthSchema);
+module.exports = mongoose.model('Synth', SynthsSchema);

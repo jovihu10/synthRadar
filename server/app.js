@@ -3,7 +3,7 @@ const path = require("path")
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
-const urlDB = 'mongodb://localhost:27017/synthRadar'
+const urlDB = process.env.URI_DB || 'mongodb://localhost:27017/synthradar'
 const app = express()
 
 const rootRoutes = require('./routes/root/')
