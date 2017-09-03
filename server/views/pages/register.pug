@@ -24,12 +24,12 @@ html(lang='en')
           a.navbar-brand(href='index') Home
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li.active
-              a(href='login')
+            li
+              a.login(href='login')
                 | Login 
                 span.sr-only (current)
-            li
-              a(href='register') Register
+            li.active
+              a.register(href='register') Register
           form.navbar-form.navbar-right
             .form-group
               input.form-control(type='text', placeholder='Search')

@@ -5,22 +5,49 @@
    
 }
 
+.navbar a{
+    color: black !important;
+    font-size:120%;
+}
+
 .key {
     width: 10%;
 
     float: left;
 }
 
+.ui-draggable{
 
-
-
-
-
-
-
-hr {
-    width: 22.5%;
 }
+
+.tab-pane{
+    margin-top:10%;
+    margin-left:13%;
+}
+
+.details{
+    border: 1px solid #cccccc;
+    float: right;
+    margin-right: 10%;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-top: 3%;
+    padding:2%;
+}
+
+.secondaryPictures{
+    margin-left: 5%;
+}
+
+
+
+.product-title{
+    background: white;
+    padding: 2%;
+}
+
+
+
 
 
 /* Header */
@@ -76,7 +103,7 @@ img {
 }
 
 .alerts{
-  margin-top:25%
+  margin-top:5%
 }
 
 
@@ -88,46 +115,7 @@ img {
 
 
 
-/* Synths */
 
-#sh101 {
-    background-image: url("../img/rolandSH101-350-280.jpg");
-    padding-left: !important0;
-}
-
-#prophet5 {
-    background-image: url("../img/p5-350-280.jpg");
-}
-
-#grpA4 {
-    background-image: url("../img/grpA4-350-280.jpg");
-}
-
-#virusTi {
-
-    background-image: url("../img/virusTI-Snow-350-280.jpg");
-}
-
-#tr909 {
-    background-image: url("../img/tr909-350-280.jpg");
-}
-
-#ms20 {
-
-    background-image: url("../img/korg_ms20-350-280.jpg");
-}
-
-.rowSynth {
-    padding: 1%;
-}
-
-.synthImage h3 {
-    color: white;
-    font-family: arial;
-    margin-top: 5%;
-}
-
-/* Cierre synths */
 
 .jumbotron {
     background-image: url("../img/sub37_3.jpg");
@@ -135,6 +123,7 @@ img {
 
 .footer {
     width: 100%;
+    margin-top: 6%;
 
     background: black;
 }

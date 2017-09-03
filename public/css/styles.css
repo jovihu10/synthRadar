@@ -11,6 +11,11 @@
 
 }
 
+.navbar-brand{
+    background: #e7e7e7 fixed!important;
+
+}
+
 .navbar a {
     color: black !important;
     font-size: 120%;
