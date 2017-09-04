@@ -1,4 +1,4 @@
-const bikes = require(__base + '/data/synths.json')
+const synths = require(__base + '/data/synths.json')
 
 function handlerIndex (req, res) {
   console.log(req.body)

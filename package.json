@@ -2,9 +2,9 @@
   "name": "synthRadar",
   "version": "1.0.0",
   "description": "1ºUsuario aterriza en la web",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

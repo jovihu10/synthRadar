@@ -7,7 +7,7 @@ function byId (req,res) {
   //new Synth es el model
   const synth = new Synth({ title, image, buyOrSellIt, kindOfProduct, brand, model, location, condition, price, description})
 
-//Creo que hay que cambiar la ruta del redirect!!
+//Elimino la ruta para salvar en el JASON??
   synth
     .save()
     .then( synth => res.json(synth))
