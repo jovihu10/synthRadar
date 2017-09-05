@@ -34,7 +34,11 @@ hr {
 
 .mainForm {
     margin-top: 5%;
-    height: 1000px;
+    height: 1150px;
+}
+
+.sendImage{
+    margin-top:5%;
 }
 
 .submit {

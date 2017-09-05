@@ -31,9 +31,9 @@ html(lang='en')
                 span.sr-only (current)
             li
               a(href='register') Register
-          form.navbar-form.navbar-right
+          form.navbar-form.navbar-right(method='get', action='/search')
             .form-group
-              input.form-control(type='text', placeholder='Search')
+              input.form-control(type='text', placeholder='Search', , aria-label='Search', name='title')
             button.btn.btn-default(type='submit') Submit
         // /.navbar-collapse
       // /.container-fluid

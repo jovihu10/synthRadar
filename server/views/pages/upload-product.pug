@@ -20,7 +20,7 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='index') Home
+          a.navbar-brand(href='/') Home
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active
@@ -29,9 +29,9 @@ html(lang='en')
                 span.sr-only (current)
             li
               a(href='register') Register
-          form.navbar-form.navbar-right
+          form.navbar-form.navbar-right(method='get', action='/search')
             .form-group
-              input.form-control(type='text', placeholder='Search')
+              input.form-control(type='text', placeholder='Search', , aria-label='Search', name='title')
             button.btn.btn-default(type='submit') Submit
     .formu.container
     .row
@@ -83,11 +83,11 @@ html(lang='en')
               fieldset
                 textarea.required(name='description', rows='10', cols='50', placeholder='Write a little explanation about state of the product, how it works, etcetera')
               label(for='price ') Price:
-              input.form-control.col-lg-2(type='text ', name='price', placeholder='€')
-              label(for='price ') Image:
-              input.form-control.col-lg-2(type='text ', name='image', placeholder='Upload an image URL')
-            input(type='file', name='')
-            button.submit.btn.btn-info.col-lg-2(type='submit ') Submit
+              input.form-control.col-lg-1(type='text ', name='price', placeholder='€')
+              label(for='image') Image:
+              input.sendImage.form-control.col-lg-2.col-md-2(type='text ', name='image', placeholder='Upload an image URL')
+            //input(type='file', name='')
+            button.submit.btn.btn-info.col-lg-2.col-md-2(type='submit ') Submit
     .footer.container-fluid
       ul
         li

@@ -17,7 +17,7 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='index') Home
+          a.navbar-brand(href='/') Home
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active
@@ -26,9 +26,9 @@ html(lang='en')
                 span.sr-only (current)
             li
               a(href='register') Register
-          form.navbar-form.navbar-right
+          form.navbar-form.navbar-right(method='get', action='/search')
             .form-group
-              input.form-control(type='text', placeholder='Search')
+              input.form-control(type='text', placeholder='Search', name='title')
             button.btn.btn-default(type='submit') Submit
     .mainContent.container-fluid
       .card
