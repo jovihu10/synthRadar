@@ -15,3 +15,9 @@ var SynthSchema = new mongoose.Schema({
 }, { collection })
 
 module.exports = mongoose.model('Synth', SynthSchema)
+
+
+//Para el search
+module.exports.getAllProducts = function (callback, limit) {
+  Product.find(callback).limit(limit)
+}

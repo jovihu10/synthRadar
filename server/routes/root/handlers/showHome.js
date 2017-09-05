@@ -18,14 +18,8 @@ function showHome (req, res) {
 }
 
 
-//buscador
-app.put('/synth/:id', (req, res) => {
-  const id = req.params.id
-  const reserved = req.body.reserved
 
-  Product.findByIdAndUpdate(id, {reserved})
-  .then(() => res.render('pages/index', {synths}))
-})
+
 
 
 

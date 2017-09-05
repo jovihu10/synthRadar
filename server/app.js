@@ -27,4 +27,17 @@ app.set('views', __dirname + '/views')
 
 app.use(rootRoutes)
 
+
+//Search
+app.get('/product/search', function (req, res) {
+  const cart = req.session.cart
+  Product.searchProductByTitle(req.query.title, function (err, products) {
+    if (err) {
+      throw err
+    }
+    // const cart = req.session.cart
+    res.render('pages/index', {products, cart})
+  })
+})
+
 module.exports = app

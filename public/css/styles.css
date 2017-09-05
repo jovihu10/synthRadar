@@ -1,3 +1,5 @@
+
+
 .navbar {
     margin: 0;
     padding: 2%;
@@ -6,6 +8,18 @@
 .container{
 
 }
+
+.rowSynth{
+    height: 700px;
+
+  
+}
+
+.rowSynth h3{
+    overflow:scroll
+}
+
+
 
 .album{
 
@@ -120,6 +134,13 @@ hr {
     height: 800px;
 }
 
+/*
+.rowSynth{
+    display:flex;
+    flex-wrap: nowrap;
+}
+*/
+
 /* Cierre Header */
 
 .synthImage {
@@ -144,34 +165,8 @@ hr {
 
 /* Synths */
 
-#sh101 {
-    /*background-image: url("../img/rolandSH101-350-280.jpg");*/
-    padding-left: !important0;
-}
 
-/*
-#prophet5 {
-    background-image: url("../img/p5-350-280.jpg");
-}
 
-#grpA4 {
-    background-image: url("../img/grpA4-350-280.jpg");
-}
-
-#virusTi {
-
-    background-image: url("../img/virusTI-Snow-350-280.jpg");
-}
-
-#tr909 {
-    background-image: url("../img/tr909-350-280.jpg");
-}
-
-#ms20 {
-
-    background-image: url("../img/korg_ms20-350-280.jpg");
-}
-*/
 .rowSynth {
     padding: 1%;
 }
