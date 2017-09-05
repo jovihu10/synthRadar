@@ -4,6 +4,7 @@ const router = express.Router()
 const showHome = require('./handlers/showHome')
 const showLogin = require('./handlers/showLogin')
 const addProduct = require('./handlers/addProduct')
+const search = require('./handlers/search')
 
 
 // navigation routes
@@ -15,8 +16,8 @@ router.get('/register', (req, res) => {
     res.render('pages/register')
 })
 
-router.get('/search-results', (req, res) => {
-    res.render('pages/search-results')
+router.get('/results', (req, res) => {
+    res.render('pages/results')
 })
 
 router.get('/item', (req, res) => {
@@ -34,5 +35,7 @@ router.get('/upload-product', (req, res) => {
 // form routes
 
 router.post('/upload-product', addProduct)
+
+router.get('/search', search)
 
 module.exports = router

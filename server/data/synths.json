@@ -1,87 +1,186 @@
-[{  
-    "title": "Roland SH-101",
-    "buyOrSellIt": "sell",
-    "buyOrSellIt": "buy",
-    "kindOfProduct": "Synthesizer",
+[
+{
+    "_id":
+    {
+        "$oid": "59ad0f632fe6d204b68a471a"
+    },
+    "title": "Roland TB303",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
     "brand": "Roland",
-    "model": "SH-101",
-    "description": "Synth in perfect conditions",
+    "model": "TB303",
     "location": "Barcelona",
     "condition": "new",
+    "description": "Excelent condition",
+    "price": 900,
+    "image": "img/tb303.jpg",
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad109c2fe6d204b68a471b"
+    },
+    "title": "Alesis Andromeda A6",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
+    "brand": "Alesis",
+    "model": "Andromeda A\u0026",
+    "location": "Madrid",
+    "condition": "sellerRefurbished",
+    "description": "It needs to be fixed a few things",
+    "price": 1800,
+    "image": "img/Andromeda_A6_Filter.jpg",
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad11022fe6d204b68a471c"
+    },
+    "title": "Roland SH101",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
+    "brand": "Roland",
+    "model": "SH101",
+    "location": "Madrid",
+    "condition": "sellerRefurbished",
+    "description": "Synth in perfect conditions",
+    "price": 500,
     "image": "img/rolandSH101-350-280.jpg",
-    "price": 350,
-    "required": "true"
-  },
-
-  {  
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad114f2fe6d204b68a471d"
+    },
     "title": "Virus Ti",
-    "buyOrSellIt": "sell",
-    "buyOrSellIt": "buy",
-    "kindOfProduct": "Synthesizer",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
     "brand": "Access",
-    "model": "Virus Ti Polar",
+    "model": "Virus Ti",
+    "location": "Italy",
+    "condition": "other",
     "description": "To repair. I don't send it",
-    "location": "Barcelona",
-    "condition": "to repair",
+    "price": 1200,
     "image": "img/virusTI-Snow-350-280.jpg",
-    "price": 150,
-    "required": "true"
-  },
-
-  {  
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad11a32fe6d204b68a471e"
+    },
     "title": "Prophet 5",
-    "buyOrSellIt": "sell",
-    "buyOrSellIt": "buy",
-    "kindOfProduct": "Synthesizer",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
     "brand": "Sequential Circuits",
     "model": "Prophet 5",
-    "description": "Synth in perfect conditions. bla bla bla",
-    "location": "London",
-    "condition": "as new",
+    "location": "France",
+    "condition": "sellerRefurbished",
+    "description": "Synth in perfect conditions. ",
+    "price": 3000,
     "image": "img/p5-350-280.jpg",
-    "price": 350,
-    "required": "true"
-  },
-
-  {  
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad11e22fe6d204b68a471f"
+    },
     "title": "Roland TR-909",
-    "buyOrSellIt": "sell",
-    "kindOfProduct": "Drumbox",
+    "buyOrSellIt": true,
+    "kindOfProduct": "newOther",
     "brand": "Roland",
-    "model": "tR-909",
+    "model": "TR-909",
+    "location": "London",
+    "condition": "used",
     "description": "Synth in perfect conditions",
-    "location": "Barcelona",
-    "condition": "new",
+    "price": 1200,
     "image": "img/tr909-350-280.jpg",
-    "price": 950,
-    "required": "true"
-  },
-
-  {  
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad12512fe6d204b68a4720"
+    },
     "title": "Grp A4",
-    "buyOrSellIt": "sell",
-    "kindOfProduct": "Synthesizer",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
     "brand": "Grp",
     "model": "A4",
-    "description": "Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions",
     "location": "Italy",
     "condition": "new",
-    "image": "img/grpA4-350-280.jpg",
-    "price": 350,
-    "required": "true"
-  },
-
-  {  
+    "description": "Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions Synth in perfect conditions",
+    "price": 3200,
+    "image": "img/GRPA4-Logo_ Home Page_Home Page.jpg",
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad12b72fe6d204b68a4721"
+    },
     "title": "Korg MS-20",
-    "buyOrSellIt": "sell",
-    "kindOfProduct": "Synthesizer",
+    "buyOrSellIt": true,
+    "kindOfProduct": "synthesizer",
     "brand": "Korg",
     "model": "MS-20",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.",
-    "location": "Paris",
+    "location": "Barcelona",
     "condition": "new",
-    "image": "/img/p5-350-280.jpg",
-    "price": 350,
-    "required": "true"
-  }
-]
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur explicabo, expedita culpa praesentium accusantium amet deserunt illum laboriosam pariatur. Itaque ut iusto magnam rerum dolorum inventore vel error mollitia.",
+    "price": 900,
+    "image": "img/korg_ms20-350-280.jpg",
+    "createdAt":
+    {
+        "$numberLong": "1504513514088"
+    },
+    "__v": 0
+},
+{
+    "_id":
+    {
+        "$oid": "59ad5408cd301808fa7c8239"
+    },
+    "title": "Roland CR-78",
+    "buyOrSellIt": true,
+    "kindOfProduct": "newOther",
+    "brand": "Roland",
+    "model": "CR78",
+    "location": "Barcelona",
+    "condition": "new",
+    "description": "see conditions",
+    "price": 1000,
+    "image": "img/roland-cr78-1-350-280.jpg",
+    "__v": 0
+}]

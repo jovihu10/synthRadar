@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const collection = 'synths'
+
 var SynthSchema = new mongoose.Schema({
     title: String,
     buyOrSellIt: Boolean,
@@ -12,12 +12,10 @@ var SynthSchema = new mongoose.Schema({
     price: Number,
     image: String,
     createdAt: Number
-}, { collection })
+}, { collection:'synths' })
 
 module.exports = mongoose.model('Synth', SynthSchema)
 
-
-//Para el search
 module.exports.getAllProducts = function (callback, limit) {
   Product.find(callback).limit(limit)
 }

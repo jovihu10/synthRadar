@@ -1,0 +1,1 @@
+mongoexport -h 'ds157833.mlab.com:57833' -u admin -p admin -d synthradar -c synths --jsonArray -o synths.json
