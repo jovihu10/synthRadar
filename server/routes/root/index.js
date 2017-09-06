@@ -19,8 +19,17 @@ router.get('/register', (req, res) => {
 router.get('/results', (req, res) => {
     res.render('pages/results')
 })
+/*
+router.get('/title', (req, res) => {
+    res.render('pages/title')
+})
 
-router.get('/item', (req, res) => {
+*/
+
+router.get('/item/:title', (req, res) => {
+    //ferho amb req params enmagatzemarho en un const
+   const {title}= req.params
+	synth.find({title})
     res.render('pages/item')
 })
 

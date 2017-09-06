@@ -10,13 +10,16 @@
 }
 
 .rowSynth{
-    height: 700px;
+    height: 740px;
+  
 
   
 }
 
+
 .rowSynth h3{
-    overflow:scroll
+
+    
 }
 
 
@@ -77,6 +80,7 @@
 
 .caption{
     background: #f2f2f2;
+    
 }
 
 h3{

@@ -28,7 +28,7 @@
 .details{
     border: 1px solid #cccccc;
     float: right;
-    margin-right: 10%;
+    margin-right: 19%;
     background: #f2f2f2;
     border-radius: 3px;
     margin-top: 3%;
@@ -45,6 +45,15 @@
     background: white;
     padding: 2%;
 }
+
+#pic-1{
+    margin-left:12%;
+    background: black;
+}
+
+
+
+
 
 
 
@@ -117,13 +126,11 @@ img {
 
 
 
-.jumbotron {
-    background-image: url("../img/sub37_3.jpg");
-}
+
 
 .footer {
     width: 100%;
-    margin-top: 6%;
+    margin-top: 14%;
 
     background: black;
 }
@@ -146,13 +153,11 @@ img {
 
 .lead {
     font-size: 250%!important;
-    /*color: white; */
     border-radius: 5px;
-    /*background: #0069d9;*/
     padding: 3%;
     color: black;
     text-align: center;
-    /*opacity:.8; */
+   
 }
 
 p {
