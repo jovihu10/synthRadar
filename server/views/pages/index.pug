@@ -58,7 +58,7 @@ html(lang='en')
                   h3.h3 #{ synth.title }
                   p= synth.description
                   p
-                    a.btn.btn-primary(href='item/' synth.title, role='button') +Info
+                    a.btn.btn-primary(href=('item/' + synth._id), role='button') +Info
                     a.btn.btn-default(href='#', role='button') Contact 
               
 

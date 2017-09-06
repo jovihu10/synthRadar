@@ -19,17 +19,13 @@ router.get('/register', (req, res) => {
 router.get('/results', (req, res) => {
     res.render('pages/results')
 })
-/*
-router.get('/title', (req, res) => {
-    res.render('pages/title')
-})
 
-*/
+router.get('/item/:id', (req, res) => {
+   const {id}= req.params
 
-router.get('/item/:title', (req, res) => {
-    //ferho amb req params enmagatzemarho en un const
-   const {title}= req.params
-	synth.find({title})
+	// TODO use Synth model to retrieve the synth by id (use method .findById...)
+	// TODO pass the synth found in db to render as a param
+
     res.render('pages/item')
 })
 
