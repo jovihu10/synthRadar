@@ -5,7 +5,8 @@ const showHome = require('./handlers/showHome')
 const showLogin = require('./handlers/showLogin')
 const addProduct = require('./handlers/addProduct')
 const search = require('./handlers/search')
-
+//Para enviar la info cuando hacemos el +info de un producto en concreto
+const Synth = require('../../models/Synth')
 
 // navigation routes
 
@@ -19,15 +20,39 @@ router.get('/register', (req, res) => {
 router.get('/results', (req, res) => {
     res.render('pages/results')
 })
+//Para la info de un producto en concreto
 
 router.get('/item/:id', (req, res) => {
-   const {id}= req.params
+    const { id } = req.params
+    
+    Synth
+    .findById(id)
+	.then(synth => res.render('pages/item', { synth}))
+	.catch(err => {
+		throw err
 
-	// TODO use Synth model to retrieve the synth by id (use method .findById...)
-	// TODO pass the synth found in db to render as a param
-
-    res.render('pages/item')
+	})
 })
+
+
+
+/*
+	router.get('/item/:id', (req, res) => {
+    const { id, title, image, description, brand } = req.params
+    console.log(id)
+    Synth
+    .findById(id)
+	.then(synth => res.render('pages/item'))
+})
+
+*/
+
+/*
+router.get('/item/:id', (req, res) => {
+    res.render('pages/:id')
+})
+
+*/
 
 router.get('/results', (req, res) => {
     res.render('pages/results')

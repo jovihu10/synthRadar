@@ -4,10 +4,10 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Item
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700', rel='stylesheet')
-    link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
-    link(href='bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet')
     link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
-    link(rel='stylesheet', href='css/item.css')
+    link(rel='stylesheet', href='../css/item.css')
   body
     nav.navbar.navbar-default
       .container
@@ -32,30 +32,33 @@ html(lang='en')
             button.btn.btn-default(type='submit') Submit
     .mainContent.container-fluid
       .card
-        .container-fliud
+        .container-fluid
           .wrapper.row
             ins.adsbygoogle(style='display:block', data-ad-client='ca-pub-9155049400353686', data-ad-slot='5554792257', data-ad-format='auto')
             script.
               (adsbygoogle = window.adsbygoogle || []).push({});
             .preview.col-lg-5.col-md-8.col-sm-4.col-md-4
               .preview-pic.tab-content
-                #pic-1.tab-pane.active(style='background-image: url("+ synth.image +")')
+                #pic-1.tab-pane.active(style='background-image: url("/'+ synth.image +'")')
                 .container.secondaryPictures
             .details.col-md-4
-              h3.product-title  Roland SH-101 
+              h3.product-title #{ synth.title } 
+              p= synth.image
               span.user @Jovihu10
               p.product-description
-                | Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.
+                = synth.description
               h4.price
                 | current price: 
-                span 299 €
+                span 
+                = synth.price +'€'
               p.vote
                 strong 91%
                 |  of users like this product! 
                 strong (87 votes)
               h5.condition
                 | condition:
-                span.condition(data-toggle='tooltip', title='small') Seller refurbished 
+                span.condition(data-toggle='tooltip', title='small') 
+                = synth.condition 
               h5.aproved
                 | aproved: 
                 i.fa.fa-check-square(aria-hidden='true')
@@ -102,5 +105,5 @@ html(lang='en')
         .col-lg-1
         .col-lg-6
           a.copyRight(href='mailto:joelvila101@gmail.com') Copyright © Joël Vila
-    script(src='js/jquery-3.2.1.slim.min.js')
-    script(src='js/bootstrap.min.js')
+    //- script(src='js/jquery-3.2.1.slim.min.js')
+    //- script(src='js/bootstrap.min.js')
