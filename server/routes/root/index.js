@@ -24,35 +24,18 @@ router.get('/results', (req, res) => {
 
 router.get('/item/:id', (req, res) => {
     const { id } = req.params
-    
+
     Synth
-    .findById(id)
-	.then(synth => res.render('pages/item', { synth}))
-	.catch(err => {
-		throw err
+        .findById(id)
+        .then(synth => res.render('pages/item', { synth }))
+        .catch(err => {
+            throw err
 
-	})
+        })
 })
 
 
 
-/*
-	router.get('/item/:id', (req, res) => {
-    const { id, title, image, description, brand } = req.params
-    console.log(id)
-    Synth
-    .findById(id)
-	.then(synth => res.render('pages/item'))
-})
-
-*/
-
-/*
-router.get('/item/:id', (req, res) => {
-    res.render('pages/:id')
-})
-
-*/
 
 router.get('/results', (req, res) => {
     res.render('pages/results')

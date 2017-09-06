@@ -6,7 +6,7 @@ function addProduct(req, res) {
 
     synth.save()
         .then(() => {
-            res.redirect('/search-results') // TODO put the correct route to redirect once saved
+            res.redirect('/') // TODO put the correct route to redirect once saved
         })
 }
 
