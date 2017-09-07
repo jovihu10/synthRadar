@@ -7,6 +7,7 @@ const addProduct = require('./handlers/addProduct')
 const search = require('./handlers/search')
 //Para enviar la info cuando hacemos el +info de un producto en concreto
 const Synth = require('../../models/Synth')
+const sendmail = require('./handlers/sendEmail')
 
 // navigation routes
 
