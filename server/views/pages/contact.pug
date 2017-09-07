@@ -6,11 +6,11 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
     link(rel='icon', href='http://getbootstrap.com/favicon.ico')
-    title Register
+    title Contact
     link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
     link(href='../bower_components/font-awesome/css/font-awesome.min.css', rel='stylesheet')
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
-    link(rel='stylesheet', href='../css/register.css')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/contact.css')
   body
     nav.navbar.navbar-default
       .container
@@ -23,41 +23,31 @@ html(lang='en')
           a.navbar-brand(href='/') Home
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li
-              a.login(href='login')
+            li.active
+              a(href='login')
                 | Login 
                 span.sr-only (current)
-            li.active
-              a.register(href='register') Register
+            li
+              a(href='register') Register
           form.navbar-form.navbar-right(method='get', action='/search')
             .form-group
               input.form-control(type='text', placeholder='Search', aria-label='Search', name='title')
             button.btn.btn-default(type='submit') Submit
     .container
-    .row
-      .col-lg-2.col-sm-2.py-2
-      .formu.col-lg-6.col-sm-6.py-4
-        form.signup-form(action='signup', method='POST')
-          h1 Create new user
-          .form-group
-            label(for='username') Username:
-            input.form-control(type='text', name='username', placeholder='Write your name')
-            label(for='nameSurname') Name and Surname:
-            input.form-control(type='text', name='nameSurname', placeholder='Write your complete name')
-            label(for='email') Email address:
-            input.form-control(type='email', name='email', placeholder='Email Adress')
-            label(for='location') Location:
-            input.form-control(type='text', name='location', placeholder='Where do you live?')
-            label(for='birthday') Birthday:
-            input.form-control(type='date', name='birthday', placeholder='Write your name')
-            label(for='password') Password: 
-            input.form-control(type='password', name='password', placeholder='Chose your password')
-            label(for='password') Password: 
-            input.form-control(type='password', name='password', placeholder='Repeat the password')
-          button.btn.btn-info(type='submit') Create User
+      .row
+        .formu.col-lg-6.col-sm-6.py-4
+          h1 Contact
+          form(action='https://formspree.io/jovihu10@gmail.com', method='POST', placeholder="email")
+            label.replyTo(for='replyTo') Reply to:
+            input.form-control(type='email', name='_replyto')
+            label.subject(for='subject') Subject:
+            input.form-control(type='text', name='_subject', value='')
+            label.text(for='text') Text:
+            input.description.form-control(type='text', name='name')
+            input.btn.btn-info(type='submit', value='Send')
     script(src='../js/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
     script.
-      window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\\/script>')
+      window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\\\/script>')
     script(src='../js/popper.min.js')
     script(src='../js/holder.min.js')
     script.

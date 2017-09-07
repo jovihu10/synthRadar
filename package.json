@@ -6,6 +6,13 @@
   "scripts": {
     "start": "node index.js"
   },
+
+  "name": "email-node",
+  "version": "1.0.0",
+  "dependencies": {
+    "nodemailer": "latest",
+    "express": "latest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jovihu10/synthRadar.git"

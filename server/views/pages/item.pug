@@ -65,39 +65,9 @@ html(lang='en')
                 .container
                   .row
                     .col-lg-2.col-md-2
-                      button.contact.btn.btn-primary.btn-md(data-toggle='modal', data-target='#ModalMessage')
+                      a.button.contact.btn.btn-primary.btn-md(href='../contact')
                         span.glyphicon.glyphicon-envelope
                         |  Contact
-                #ModalMessage.contact.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                  .modal-dialog
-                    form#FormMessage.form-horizontal
-                      .modal-content
-                        .modal-header.btn-primary
-                          button.close(type='button', data-dismiss='modal')
-                            span(aria-hidden='true') ×
-                            span.sr-only Close
-                          h4#myModalLabel.text-center Message
-                        .modal-body
-                          br
-                          .control-group
-                            label(for='destinataire') Sélectionner un service
-                            select#FormMessageDestinatiare.form-control(name='destinataire')
-                              option(value='0', selected='selected') Support
-                          br
-                          .control-group
-                            label(for='destinataire') Sujet
-                            input.form-control(name='sujet', type='text')
-                          br
-                          .control-group
-                            label(for='destinataire') Message
-                            textarea#FormMessageMessage.form-control(name='message', rows='5')
-                          br
-                        .modal-footer
-                          .text-center
-                            button.btn.btn-primary.btn-lg(type='submit')
-                              span.glyphicon.glyphicon-send
-                              |  Envoyer
-                            button.btn.btn-default.btn-xs(type='button', data-dismiss='modal') Fermer
                 button.alerts.add-to-cart.btn.btn-danger(type='submit') Send alert
     .footer.container-fluid
       .row

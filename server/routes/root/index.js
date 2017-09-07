@@ -21,6 +21,11 @@ router.get('/register', (req, res) => {
 router.get('/results', (req, res) => {
     res.render('pages/results')
 })
+
+
+router.get('/contact', (req, res) => {
+    res.render('pages/contact')
+})
 //Para la info de un producto en concreto
 
 router.get('/item/:id', (req, res) => {
@@ -34,6 +39,9 @@ router.get('/item/:id', (req, res) => {
 
         })
 })
+
+
+
 
 
 
