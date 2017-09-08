@@ -24,11 +24,11 @@ html(lang='en')
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
-              a.login(href='login')
+              //a.login(href='login')
                 | Login 
                 span.sr-only (current)
             li.active
-              a.register(href='register') Register
+              //a.register(href='register') Register
           form.navbar-form.navbar-right(method='get', action='/search')
             .form-group
               input.form-control(type='text', placeholder='Search', aria-label='Search', name='title')
@@ -54,7 +54,7 @@ html(lang='en')
             input.form-control(type='password', name='password', placeholder='Chose your password')
             label(for='password') Password: 
             input.form-control(type='password', name='password', placeholder='Repeat the password')
-          button.btn.btn-info(type='submit') Create User
+          a.button.btn.btn-info(href='registered', type='submit') Create User
     script(src='../js/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
     script.
       window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\\/script>')

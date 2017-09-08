@@ -21,10 +21,10 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='index') Home
+          a.navbar-brand(href='/') Home
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          //ul.nav.navbar-nav
+          ul.nav.navbar-nav
             li
               a(href='login')
                 | Login 
@@ -41,13 +41,13 @@ html(lang='en')
       .container
         h1.jumbotron-heading Synth Radar
         hr
-        a.dataRadar.btn.btn-lg(href='index') DataRadar
+        a.dataRadar.btn.btn-lg(href='/') DataRadar
         a.uploadProduct.btn.btn-lg(href='upload-product') Upload Product
         p
     .album.text-muted
       .container
         p.lead
-          | If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is avaiable!
+          | If you are a synthesizer nerd, find whatever you are looking for around the world and receive alerts when it is available!
         .row
           each synth in synths
             .rowSynth.col-lg-4
@@ -58,8 +58,8 @@ html(lang='en')
                   h3.h3 #{ synth.title }
                   p= synth.description
                   p
-                    a.btn.btn-primary(href='item', role='button') +Info
-                    a.btn.btn-default(href='#', role='button') Contact 
+                    a.btn.btn-primary(href=('item/' + synth._id), role='button', target="_blank") +Info
+                    a.btn.btn-default(href='contact', role='button') Contact 
               
 
 

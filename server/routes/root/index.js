@@ -41,9 +41,13 @@ router.get('/item/:id', (req, res) => {
 })
 
 
+router.get('/registered', (req, res) => {
+    res.render('pages/registered')
+})
 
-
-
+router.get('/data-radar', (req, res) => {
+    res.render('pages/data-radar')
+})
 
 
 router.get('/results', (req, res) => {

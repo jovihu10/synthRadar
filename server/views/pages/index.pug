@@ -26,11 +26,11 @@ html(lang='en')
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
-              a(href='login')
+              //a(href='login')
                 | Login 
                 span.sr-only (current)
             li
-              a(href='register') Register
+              //a(href='register') Register
           form.navbar-form.navbar-right(method='get', action='/search')
             .form-group
               input.form-control(type='text', placeholder='Search', aria-label='Search', name='title')
@@ -41,7 +41,7 @@ html(lang='en')
       .container
         h1.jumbotron-heading Synth Radar
         hr
-        a.dataRadar.btn.btn-lg(href='/') DataRadar
+        //a.dataRadar.btn.btn-lg(href='data-radar') DataRadar
         a.uploadProduct.btn.btn-lg(href='upload-product') Upload Product
         p
     .album.text-muted
