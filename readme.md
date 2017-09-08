@@ -13,7 +13,7 @@ This repo contains a full stack project called SynthRadar, which musicians can f
 
 SynthRadar is made with PUG for rendering on back-end with the idea to get a better SEO as much as possible.
 
-Technologies used on front: 
+<h2>Technologies used on front: </h2>
 -CSS3
 -Bootstrap 
 -Jquery
@@ -21,7 +21,7 @@ Technologies used on front:
 -Media Queries
 -Pug
 
-Back-End:
+<h2>Back-End:</h2>
 -Express
 -Pug
 -Node JS
@@ -29,17 +29,19 @@ Back-End:
 -Mongoose
 
 
+```
 To Watch this:
-
+```
 
 On your console, has to choose the right route where you saved it an open
 node (or nodemon).
-
+```
 On your browser:
-
+```
 http://localhost:3002/
-
+```
 To run the server:
+```
 
 $ npm start
 
