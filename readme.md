@@ -1,23 +1,39 @@
-1ºUsuario aterriza en la web
+https://github.com/MarioTerron/logo-images/blob/master/logos/js.png
 
--Aparecen 9 de los últimos productos subidos a la web
--Se puede clickar en un producto para ir al detalle
--Si clickas en uno y quieres comunicarte con el vendedor/comprador, puedes:
 
--logearte si estás registrado.
--Si no estás registrado, escribir tu mail, nombre y tel.
-No será tan seguro como si estuvieras registrado
+This repo contains a full stack project called SynthRadar, which musicians can find and buy synthesizers, drumboxes and other stuff necessary to make music. This project is focused mainly in vintage instruments, because they are really expensive and sometimes hard to find. So, if you want something, with this webapp you could create an alert and receive an email when somebody sells itself.
 
-2º) El buscador siempre está disponible en todas las páginas
--se muestran los resultado
--se puede hacer una búsqueda avanzada con un filtro.
+SynthRadar is made with PUG for rendering on back-end with the idea to get a better SEO as much as possible.
 
-3º) Cuando se clicka  al submit del buscador, aparecerán 9 resultados y después pasa a la siguiente página
+Technologies used on front: 
+-CSS3
+-Bootstrap 
+-Jquery
+-JavaScript
+-Media Queries
+-Pug
 
-4º) categorias filtro avanzado:
--select para sintetizador, caja de ritmos, filtro, sampler, otros
+Back-End:
+-Express
+-Pug
+-Node JS
+-Mongo DB
+-Mongoose
 
-5º) Si un producto encaja en lo que buscas, puedes comunicarte por mail con el vendedor.
 
-6) Si buscas un producto y no está, puedes poner un alert para cuando esté el moelo que buscas y encaje en el rango de precio, te envíe un alert
-# synthRadar
+To Watch this:
+
+
+On your console, has to choose the right route where you saved it an open
+node (or nodemon).
+
+On your browser:
+
+http://localhost:3002/
+
+To run the server:
+
+$ npm start
+
+
+this project has been uploaded on Heroku, so if you whant, you can watch this on https://synthradar.herokuapp.com/
