@@ -81,7 +81,7 @@ html(lang='en')
                   option(value='notWorking') For parts or not working 
               label.description(for='description') Description
               fieldset
-                textarea.required(name='description', rows='10', cols='50', placeholder='Write a little explanation about state of the product, how it works, etcetera')
+                textarea.required(name='description', rows='10', cols='50', placeholder='Write a little explanation about condition of the product, how it works, etcetera')
               label(for='price ') Price:
               input.form-control.col-lg-1(type='text ', name='price', placeholder='€')
               label(for='image') Image:
@@ -89,10 +89,10 @@ html(lang='en')
             //input(type='file', name='')
             button.submit.btn.btn-info.col-lg-2.col-md-2(type='submit ') Submit
     .footer.container-fluid
-      ul
-        li
-          a(href='mailto:joelvila101@gmail.com ') Copyright © Joël Vila
-        li
+      .row
+        .col-lg-1
+        .col-lg-6
+          a.copyRight(href='mailto:joelvila101@gmail.com') Copyright © Joël Vila
     script(src='js/jquery-3.2.1.slim.min.js', crossorigin='anonymous ')
     script.
       window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js "><\\\/script>')
